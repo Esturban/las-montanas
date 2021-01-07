@@ -1,0 +1,56 @@
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+# Default site wide settings
+[build.processing]
+  skip_processing = true
+
+[context.production.environment]
+HUGO_VERSION = "0.69.2"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[context.split1]
+command = "hugo --gc --minify --enableGitInfo"
+
+[context.split1.environment]
+HUGO_VERSION = "0.69.2"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.69.2"
+
+[context.branch-deploy]
+command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.69.2"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+# Branch specific settings
+[context.branch-name.processing]
+  skip_processing = false
+[context.branch-name.processing.css]
+  bundle = true
+  minify = true
+  
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, s-max-age=2592000"
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"

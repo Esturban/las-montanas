@@ -1,0 +1,139 @@
+######################## default configuration ####################
+baseURL = "/"
+languageCode = "en-us"
+title = "Las Montañas Inn | Wellness Travel Destination in Rural Majestic Colombia"
+theme = "restaurant-hugo"
+summaryLength = "7"
+paginate = 6
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$","\\.knit\\.md$", "\\.utf8\\.md$", "_cache$"]
+
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "css/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "css/slick.css"
+  [[params.plugins.css]]
+  URL = "css/font-awesome.min.css"
+  [[params.plugins.css]]
+  URL = "css/animate.min.css"
+  [[params.plugins.css]]
+  URL = "css/venobox.css"
+  [[params.plugins.css]]
+  URL = "css/main.css"
+  [[params.plugins.css]]
+  URL = "css/responsive.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "js/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "js/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "js/slick.min.js"
+  [[params.plugins.js]]
+  URL = "js/wow.min.js"
+  [[params.plugins.js]]
+  URL = "js/venobox.min.js"
+  [[params.plugins.js]]
+  URL = "js/main.js"
+
+############################## navigation ###############################
+[menu]
+	
+	[[menu.main]]
+  name = ""
+  URL = "hero-area"
+  weight = 1
+
+  [[menu.main]]
+  name = "Las Montañas"
+  URL = "about-us"
+  weight = 2
+
+  [[menu.main]]
+  name = "To Do"
+  URL = "blog"
+  weight = 3
+
+  [[menu.main]]
+  name = "Packages"
+  URL = "price"
+  weight = 4
+
+  [[menu.main]]
+  name = "Book Now"
+  URL = "contact-us"
+  weight = 5
+
+
+#################### default parameters ################################
+[params]
+logo = "images/rsz_logo.png"
+copyright = "Copyright 2019 - Las Montañas Inn"
+# Preloader
+[params.preloader]
+enable = true
+preloader = "" # use .png , .svg or .gif format
+
+################################### Footer ############################
+[params.footer]
+enable = true
+contactInfoTitle = "CONTACT <span>INFO</span> "
+blogTitle = "LATEST <span></span>"
+galleryTitle = "OUR <span>VIEWS</span>"
+socialTitle = "Follow <span>US</span>"
+
+############################ footer contact item
+[[params.footer.contactItem]]
+title="Telephone"
+icon = "fa fa-phone"
+content =  "+57 (319) 588 1931"
+
+[[params.footer.contactItem]]
+title="Address"
+icon = "fa fa-map-marker"
+content = "Vereda Atanasio, Santa Barbara, Colombia"
+
+[[params.footer.contactItem]]
+title="E mail"
+icon = "fa fa-envelope"
+content = "Las Montañas Inn - info@lasmontanasinn.com"
+
+######################### footer gallery
+[[params.footer.gallery]]
+image = "images/slider/r/f1.jpg"
+
+[[params.footer.gallery]]
+image = "images/slider/r/f2.jpg"
+
+[[params.footer.gallery]]
+image = "images/slider/r/f3.jpg"
+
+[[params.footer.gallery]]
+image = "images/slider/r/f4.jpg"
+
+[[params.footer.gallery]]
+image = "images/slider/r/f5.jpg"
+
+[[params.footer.gallery]]
+image = "images/slider/r/f7.jpg"
+
+######################## Social Icon
+[[params.footer.socialLink]]
+icon = "facebook"
+link = "//facebook.com/hosterialasmontanasinn"
+
+[[params.footer.socialLink]]
+icon = "twitter"
+link = "//twitter.com/HosteriaLas"
+#
+#[[params.footer.socialLink]]
+#icon = "airbnb"
+#link = "//airbnb.com/rooms/26280452"
+
+[[params.footer.socialLink]]
+icon = "instagram"
+link = "//instagram.com/hosterialasmontanas"

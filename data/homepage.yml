@@ -1,0 +1,87 @@
+################## Hero area ##################
+heroArea:
+  enable : true
+  bgImage : "images/DSC01779.jpg"
+  overlay:
+    enable : false
+
+################### Gallery ###################
+gallery:
+  enable : true
+  sliderItem:
+    - image : "images/slider/r/f1.jpg"
+    - image : "images/slider/r/f2.jpg"
+    - image : "images/slider/r/f3.jpg"
+    - image : "images/slider/r/f4.jpg"
+    - image : "images/slider/r/f5.jpg"
+    - image : "images/slider/r/f6.jpg"
+    - image : "images/slider/r/f7.jpg"
+    - image : "images/slider/r/f8.jpg"
+  overlay:
+    enable: true
+
+################ About #######################
+about:
+  enable : true
+  image : "images/cooker-img.png" 
+  title : "Discover all <span> Medellin</span> offers"
+  description : "We are a group of passionate locals who have also worked as professional guides for more than 15 years.  Our mission is to show you our country from a different perspective and we do this by curating off the beaten path adventures, disconnecting you from your daily routine to focus more on enjoying the now, and into the heart of the destination."
+  
+################# Blog ######################
+blog:
+  enable : true
+  title : "Things to <span>Do</span>"
+  bgImage : "images/blog/IMG_1863.JPG"
+  overlay:
+    enable : true
+
+
+################# food Menu ################
+pricing:
+  enable : true
+  title : "<span>EXPLORE</span> Colombia with ease"
+  description: "Every package includes a private room (full bed) with en-suite bathroom and  Colombian decor throughout.  <p>Santa Barbara's landscape unfolds before you with a feast for your eyes. Kick your feet up and enjoy the marvelous mountain range view overlooking the jungles of Colombia.</p><p>Your day begins with enjoying fresh organic coffee grown on the grounds to accompany an international breakfast. You notice the pool engulfed in natural light, with cascading water features and wildlife, enhancing the ethereal experience.</p>"
+  subtitle : "FEATURED ON THE WEEK"
+  pricingItem:
+  - title: "One night for one"
+    description: "An easy stop along the way of your adventure? Spend some time in Santa Barbara with our guidance in the town and neighboring villages. "
+    price : "$ 50.00 USD"
+
+  - title: "One night for two"
+    description: "If you're travelling with your partner, capture awe-inspiring moments 1600m above sea level."
+    price : "$ 80.00 USD"
+
+  - title: "Two night stay"
+    description: ""
+    price : "$ 140.00 USD"
+
+  - title: "Three night stay"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&"
+    price : "$ 205.00 USD"
+
+  - title: "One week stay"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&"
+    price : "$ 435.00 USD"
+
+  - title: "One month stay"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&"
+    price : "$ 1,400.00 USD"
+
+################### Subscription ################
+subscription:
+  enable : false
+  bgImage : "images/subscribe-bg.jpg"
+  title : "SUBSCRIBE to our <span>NEWSLETTER</span>"
+  description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+  #Mailchimp subscription configaration 
+  formAction : "https://themefisher.us9.list-manage.com/subscribe/post?u=f95ece2732a6e9925f2e70a61&amp;id=b1e227529e"
+  formName : "b_f95ece2732a6e9925f2e70a61_b1e227529e"
+  overlay:
+    enable : true
+
+################ Contact #######################
+contact:
+  enable : true
+  title: "Let's <span> Contact Us </span>"
+  subtitle: "SIGN UP FOR EMAIL ALERTS"
+  formAction : "#" #contact form works with formspree.io
