@@ -9,14 +9,14 @@ heroArea:
 gallery:
   enable : true
   sliderItem:
-    - image : "/images/slider/r/f1.jpg"
-    - image : "/images/slider/r/f2.jpg"
-    - image : "/images/slider/r/f3.jpg"
-    - image : "/images/slider/r/f4.jpg" 
-    - image : "/images/slider/r/f5.jpg"
-    - image : "/images/slider/r/f6.jpg"
-    - image : "/images/slider/r/f7.jpg"
-    - image : "/images/slider/r/f8.jpg"
+    - image : "images/slider/r/f1.jpg"
+    - image : "images/slider/r/f2.jpg"
+    - image : "images/slider/r/f3.jpg"
+    - image : "images/slider/r/f4.jpg" 
+    - image : "images/slider/r/f5.jpg"
+    - image : "images/slider/r/f6.jpg"
+    - image : "images/slider/r/f7.jpg"
+    - image : "images/slider/r/f8.jpg"
   overlay:
     enable: true
 
