@@ -1,11 +1,14 @@
 ######################## default configuration ####################
-baseURL = "www.lasmontanasinn.com"
+baseURL = ""
 languageCode = "en-us"
 title = "Las Montañas Inn | Wellness Travel Destination in Rural Majestic Colombia"
+description = "Hilltop Inn along the south of Medellin. Our Santa Barbara bed and breakfast offers luxury rooms, stunning gardens, country views & amazing meals on a 3 acre paisa finca. Escape today!"
 theme = "restaurant-hugo"
+author = "Las Montañas Inn"
 summaryLength = "7"
 paginate = 6
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$","\\.knit\\.md$", "\\.utf8\\.md$", "_cache$"]
+googleAnalytics = "UA-81176691-4"
 
 ############################# Plugins ##############################
 [params.plugins]
