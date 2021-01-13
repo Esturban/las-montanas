@@ -90,4 +90,33 @@ $(document).ready(function () {
     }
 });
 
+// Formt date as YYYY-MM-DD
+function formatISOLocal(d) {
+  let z = n => ('0' + n).slice(-2);
+  return d.getFullYear()+'-'+z(d.getMonth()+1) + '-' + z(d.getDate());
+}
+
+window.onload = function() {
+  let sinp = document.querySelector('#start');
+  let ds = new Date();
+  sinp.min = formatISOLocal(ds);
+  sinp.defaultValue = sinp.min;
+  ds.setFullYear(ds.getFullYear() + 1);
+  sinp.max = formatISOLocal(ds);
+  // Debug
+  console.log(inp.outerHTML);
+}
+
+window.onload = function() {
+  let inp = document.querySelector('#end');
+  let d = new Date();
+  inp.min = formatISOLocal(d);
+  inp.defaultValue = inp.min;
+  d.setFullYear(d.getFullYear() + 1);
+  inp.max = formatISOLocal(d);
+  // Debug
+  console.log(inp.outerHTML);
+}
+
+
 });

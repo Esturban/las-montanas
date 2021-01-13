@@ -4,7 +4,7 @@ languageCode = "en-us"
 title = "Las Montañas Inn | Wellness Travel Destination in Rural Majestic Colombia"
 theme = "restaurant-hugo"
 summaryLength = "7"
-paginate = 6
+paginate = 8
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$","\\.knit\\.md$", "\\.utf8\\.md$", "_cache$"]
 googleAnalytics = "UA-81176691-4"
 
@@ -85,8 +85,8 @@ preloader = "" # use .png , .svg or .gif format
 ################################### Footer ############################
 [params.footer]
 enable = true
-contactInfoTitle = "CONTACT <span>INFO</span> "
-blogTitle = "LATEST <span></span>"
+contactInfoTitle = "GET IN <span>TOUCH</span> "
+blogTitle = "LAS<span>MONTAÑAS</span>"
 galleryTitle = "OUR <span>VIEWS</span>"
 socialTitle = "Follow <span>US</span>"
 
