@@ -12,8 +12,8 @@ googleAnalytics = "UA-81176691-4"
 [params.plugins]
 
   # CSS Plugins
-  [[params.plugins.css]]
-  URL = "css/bootstrap.min.css"
+#  [[params.plugins.css]]
+#  URL = "css/bootstrap.min.css"
   [[params.plugins.css]]
   URL = "css/slick.css"
   [[params.plugins.css]]
