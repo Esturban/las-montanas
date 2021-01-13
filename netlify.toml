@@ -28,6 +28,20 @@ command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.69.2"
+# If skip_processing = true, all other settings are ignored
+[build.processing]
+skip_processing = false
+[build.processing.css]
+bundle = true
+minify = false
+[build.processing.js]
+bundle = true
+minify = false
+[build.processing.html]
+pretty_urls = true
+[build.processing.images]
+compress = true
+
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
