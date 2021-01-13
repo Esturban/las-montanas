@@ -4,6 +4,10 @@
   src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
 }
 
+#slick-slide > img{
+  padding:8px;
+}
+
 /*--
     Common Css
 --*/
