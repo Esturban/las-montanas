@@ -5,6 +5,8 @@
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
 {{ with .Site.Params.description }}
 <meta name="description" content="{{ . }}">
 {{ end }}
@@ -12,7 +14,7 @@
 
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}
-  <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"  href="{{ .URL | absURL }} ">
+  <link rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ .URL | absURL }} ">
   {{ end }}
 
   {{ "<!--Favicon-->" | safeHTML }}
