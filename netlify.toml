@@ -2,8 +2,6 @@
 publish = "public"
 command = "hugo --gc --minify"
 # Default site wide settings
-[build.processing]
-  skip_processing = true
 
 [context.production.environment]
 HUGO_VERSION = "0.69.2"
@@ -28,6 +26,20 @@ command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.69.2"
+# If skip_processing = true, all other settings are ignored
+[build.processing]
+skip_processing = false
+[build.processing.css]
+bundle = false
+minify = false
+[build.processing.js]
+bundle = false
+minify = false
+[build.processing.html]
+pretty_urls = true
+[build.processing.images]
+compress = false
+
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"

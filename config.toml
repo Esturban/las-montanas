@@ -86,7 +86,7 @@ preloader = "" # use .png , .svg or .gif format
 [params.footer]
 enable = true
 contactInfoTitle = "GET IN <span>TOUCH</span> "
-blogTitle = "LAS<span>MONTAÑAS</span>"
+blogTitle = "LAS <span>MONTAÑAS</span>"
 galleryTitle = "OUR <span>VIEWS</span>"
 socialTitle = "Follow <span>US</span>"
 

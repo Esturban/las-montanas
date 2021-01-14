@@ -10,8 +10,8 @@
                     </div>
                     <div class="gallery-slider">
                         {{ range .sliderItem }}
-                        <a href="{{ .image | absURL }}" class="venobox" data-gall="sliderGallery"><img class="img-responsive" loading="lazy" src="{{ .image | absURL }}" alt="" width = "285" height = "178">
-
+                        <a href="{{ .image | absURL }}" class="venobox" data-gall="sliderGallery">
+                          <img class="img-responsive" loading="lazy" src="{{ .image | absURL }}" alt="" width = "285" height = "178">
                         </a>
                         {{ end }}
                     </div>

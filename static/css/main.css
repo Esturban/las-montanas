@@ -2,6 +2,11 @@
 @font-face {
   font-family: myfont;
   src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+  font-display: swap;
+}
+
+#slick-slide > img{
+  padding:8px;
 }
 
 /*--
