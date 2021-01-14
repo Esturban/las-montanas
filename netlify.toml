@@ -3,7 +3,7 @@ publish = "public"
 command = "hugo --gc --minify"
 # Default site wide settings
 [build.processing]
-  skip_processing = true
+  skip_processing = false
 
 [context.production.environment]
 HUGO_VERSION = "0.69.2"
