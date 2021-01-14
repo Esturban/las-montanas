@@ -99,7 +99,7 @@ content =  "+57 (317) 211 4410"
 [[params.footer.contactItem]]
 title="Address"
 icon = "fa fa-map-marker"
-content = "Vereda Atanasio, Santa Barbara, Colombia"
+content = "Las Montañas, Vereda Atanasio, Santa Barbara, Colombia"
 
 [[params.footer.contactItem]]
 title="E mail"

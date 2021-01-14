@@ -116,7 +116,7 @@ window.onload = function() {
   inp.max = formatISOLocal(d);
   // Debug
   console.log(inp.outerHTML);
-}*/
+}
 
   if ('loading' in HTMLImageElement.prototype) {
     const images = document.querySelectorAll('img[loading="lazy"]');
@@ -130,7 +130,7 @@ window.onload = function() {
       'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
     document.body.appendChild(script);
   }
-  
+  */
           // to defer the loading of stylesheets
         // just add it right before the </body> tag
         // and before any javaScript file inclusion (for performance)  
