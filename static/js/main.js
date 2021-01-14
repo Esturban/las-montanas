@@ -95,7 +95,7 @@ function formatISOLocal(d) {
   let z = n => ('0' + n).slice(-2);
   return d.getFullYear()+'-'+z(d.getMonth()+1) + '-' + z(d.getDate());
 }
-
+/*
 window.onload = function() {
   let sinp = document.querySelector('#start');
   let ds = new Date();
@@ -130,7 +130,7 @@ window.onload = function() {
       'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
     document.body.appendChild(script);
   }
-  
+  */
           // to defer the loading of stylesheets
         // just add it right before the </body> tag
         // and before any javaScript file inclusion (for performance)  

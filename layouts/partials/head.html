@@ -14,7 +14,8 @@
 
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}
-  <link rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ .URL | absURL }} ">
+    {{if in .URL "main.css" }}<link rel="preload"  media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ .URL | absURL }} ">{{end}}
+    <link rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ .URL | absURL }} ">
   {{ end }}
 
   {{ "<!--Favicon-->" | safeHTML }}

@@ -94,12 +94,12 @@ socialTitle = "Follow <span>US</span>"
 [[params.footer.contactItem]]
 title="Telephone"
 icon = "fa fa-phone"
-content =  "+57 (319) 588 1931"
+content =  "+57 (317) 211 4410"
 
 [[params.footer.contactItem]]
 title="Address"
 icon = "fa fa-map-marker"
-content = "Vereda Atanasio, Santa Barbara, Colombia"
+content = "Las Montañas, Vereda Atanasio, Santa Barbara, Colombia"
 
 [[params.footer.contactItem]]
 title="E mail"
