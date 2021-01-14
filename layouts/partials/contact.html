@@ -9,7 +9,10 @@
             <div class="block">
                <h1 class=" heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">{{ .title | markdownify }}</h1>
                <h3 class="title wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">{{ .subtitle | markdownify }}</h3>
-               <form name="contact" method="POST" data-netlify="true">
+               <form name="contact" method="POST" netlify-honeypot="bot-field"  data-netlify="true">
+                  <p class="hidden">
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </p>
                   <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
                      <input type="email" name="email" class="form-control" placeholder="Your e-mail address">
                   </div>
