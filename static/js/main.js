@@ -95,7 +95,7 @@ function formatISOLocal(d) {
   let z = n => ('0' + n).slice(-2);
   return d.getFullYear()+'-'+z(d.getMonth()+1) + '-' + z(d.getDate());
 }
-
+/*
 window.onload = function() {
   let sinp = document.querySelector('#start');
   let ds = new Date();
@@ -116,7 +116,7 @@ window.onload = function() {
   inp.max = formatISOLocal(d);
   // Debug
   console.log(inp.outerHTML);
-}
+}*/
 
   if ('loading' in HTMLImageElement.prototype) {
     const images = document.querySelectorAll('img[loading="lazy"]');
