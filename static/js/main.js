@@ -95,14 +95,14 @@ function formatISOLocal(d) {
   let z = n => ('0' + n).slice(-2);
   return d.getFullYear()+'-'+z(d.getMonth()+1) + '-' + z(d.getDate());
 }
-/*
+
 window.onload = function() {
   let sinp = document.querySelector('#start');
-  let ds = new Date();
-  sinp.min = formatISOLocal(ds);
+  let d = new Date();
+  sinp.min = formatISOLocal(d);
   sinp.defaultValue = sinp.min;
   ds.setFullYear(ds.getFullYear() + 1);
-  sinp.max = formatISOLocal(ds);
+  sinp.max = formatISOLocal(d);
   // Debug
   console.log(inp.outerHTML);
 }
@@ -117,7 +117,7 @@ window.onload = function() {
   // Debug
   console.log(inp.outerHTML);
 }
-
+/*
   if ('loading' in HTMLImageElement.prototype) {
     const images = document.querySelectorAll('img[loading="lazy"]');
     images.forEach(img => {
