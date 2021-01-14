@@ -38,7 +38,7 @@ minify = false
 [build.processing.html]
 pretty_urls = true
 [build.processing.images]
-compress = true
+compress = false
 
 
 [context.next.environment]
