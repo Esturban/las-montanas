@@ -30,10 +30,10 @@ HUGO_VERSION = "0.69.2"
 [build.processing]
 skip_processing = false
 [build.processing.css]
-bundle = true
+bundle = false
 minify = false
 [build.processing.js]
-bundle = true
+bundle = false
 minify = false
 [build.processing.html]
 pretty_urls = true
