@@ -7,7 +7,6 @@ summaryLength = "7"
 paginate = 8
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$","\\.knit\\.md$", "\\.utf8\\.md$", "_cache$"]
 googleAnalytics = "UA-81176691-4"
-languageCode="en-US"
 #defaultContentLanguage = "en"
 ############################# Plugins ##############################
 [params.plugins]
