@@ -76,6 +76,7 @@ logo = "images/rsz_logo.png"
 copyright = "Copyright 2019 - Las Montañas Inn"
 description = "Hilltop Inn along the south of Medellin. Our Santa Barbara bed and breakfast offers luxury rooms, stunning gardens, country views & amazing meals on a 3 acre paisa finca. Escape today!"
 author = "Las Montañas Inn"
+privacy = "privacy-policy"
 
 # Preloader
 [params.preloader]
