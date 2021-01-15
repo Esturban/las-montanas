@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://lasmontanasinn.com"
+baseURL = "https://www.lasmontanasinn.com"
 languageCode = "en-us"
 title = "Las Montañas Inn | Wellness Travel Destination in Rural Majestic Colombia"
 theme = "restaurant-hugo"
@@ -7,6 +7,7 @@ summaryLength = "7"
 paginate = 8
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$","\\.knit\\.md$", "\\.utf8\\.md$", "_cache$"]
 googleAnalytics = "UA-81176691-4"
+languageCode="en-US"
 #defaultContentLanguage = "en"
 ############################# Plugins ##############################
 [params.plugins]
