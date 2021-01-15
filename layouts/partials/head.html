@@ -5,17 +5,24 @@
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-  {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-  {{ hugo.Generator }}
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+{{ with .Site.Params.description }}
+<meta name="description" content="{{ . }}">
+{{ end }}
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}
-  <link rel="stylesheet" href="{{ .URL | absURL }} ">
+    {{if in .URL "main.css" }}<link rel="preload"  media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ .URL | absURL }} "  as="style" >{{end}}
+    <link rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ .URL | absURL }} ">
   {{ end }}
+  <link rel="preload" href="/fonts/ufonts.com_tw-cen-mt.ttf" as="font" type="font/ttf" as = "style" crossorigin>
+  <link rel="preload" href="/fonts/fontawesome-webfont.woff?v=4.2.0" as="font" type="font/woff"  as = "style" crossorigin>
 
   {{ "<!--Favicon-->" | safeHTML }}
-  <link rel="shortcut icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
-  <link rel="icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
+  <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }} " type="image/x-icon">
+  <link rel="icon" href="{{ "images/favicon.ico" | absURL }} " type="image/x-icon">
+{{ template "_internal/google_analytics.html" . }}
 
 </head>

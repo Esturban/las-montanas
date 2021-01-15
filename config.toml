@@ -1,12 +1,13 @@
 ######################## default configuration ####################
-baseURL = "/"
+baseURL = "https://www.lasmontanasinn.com"
 languageCode = "en-us"
 title = "Las Montañas Inn | Wellness Travel Destination in Rural Majestic Colombia"
 theme = "restaurant-hugo"
 summaryLength = "7"
-paginate = 6
+paginate = 8
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$","\\.knit\\.md$", "\\.utf8\\.md$", "_cache$"]
-
+googleAnalytics = "UA-81176691-4"
+#defaultContentLanguage = "en"
 ############################# Plugins ##############################
 [params.plugins]
 
@@ -73,6 +74,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$","\\.knit\\.md$", "\\.utf8\\.md$", "_ca
 [params]
 logo = "images/rsz_logo.png"
 copyright = "Copyright 2019 - Las Montañas Inn"
+description = "Hilltop Inn along the south of Medellin. Our Santa Barbara bed and breakfast offers luxury rooms, stunning gardens, country views & amazing meals on a 3 acre paisa finca. Escape today!"
+author = "Las Montañas Inn"
+
 # Preloader
 [params.preloader]
 enable = true
@@ -81,8 +85,8 @@ preloader = "" # use .png , .svg or .gif format
 ################################### Footer ############################
 [params.footer]
 enable = true
-contactInfoTitle = "CONTACT <span>INFO</span> "
-blogTitle = "LATEST <span></span>"
+contactInfoTitle = "GET IN <span>TOUCH</span> "
+blogTitle = "LAS <span>MONTAÑAS</span>"
 galleryTitle = "OUR <span>VIEWS</span>"
 socialTitle = "Follow <span>US</span>"
 
@@ -90,12 +94,12 @@ socialTitle = "Follow <span>US</span>"
 [[params.footer.contactItem]]
 title="Telephone"
 icon = "fa fa-phone"
-content =  "+57 (319) 588 1931"
+content =  "+57 (317) 211 4410"
 
 [[params.footer.contactItem]]
 title="Address"
 icon = "fa fa-map-marker"
-content = "Vereda Atanasio, Santa Barbara, Colombia"
+content = "Las Montañas, Vereda Atanasio, Santa Barbara, Colombia"
 
 [[params.footer.contactItem]]
 title="E mail"
