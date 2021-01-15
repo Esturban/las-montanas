@@ -5,9 +5,10 @@
   font-display: swap;
 }
 
-#slick-slide > img{
-  padding:8px;
+.venobox > img{
+  padding:10px;
 }
+
 
 img {
     aspect-ratio: attr(width) / attr(height);
