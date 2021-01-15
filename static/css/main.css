@@ -36,7 +36,20 @@ body {
   font-family: myfont;
   font-size: 14px;
   font-weight: 400;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.66s ease-out;
 }
+
+body.loaded {
+  font-family: myfont;
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  overflow: visible;
+  transition: height 0.66s ease-out;
+}
+
 
 a:focus{
   outline: 0;
@@ -57,17 +70,17 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
 }
 
 p {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 20px;
   margin: 0px;
@@ -76,8 +89,17 @@ p {
 
 ul {
   padding: 0;
+  font-size: 18px;
   margin: 0;
   list-style: none;
+}
+/*Single post content*/
+.post-single-content > ul {
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px;
+  list-style: circle;
+  
 }
 
 a,
