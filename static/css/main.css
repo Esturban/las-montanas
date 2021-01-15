@@ -5,8 +5,8 @@
   font-display: swap;
 }
 
-.venobox{
-  padding:48px;
+.venobox > img{
+  padding:10px;
 }
 
 
