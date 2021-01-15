@@ -63,6 +63,10 @@ HUGO_ENABLEGITINFO = "true"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
+  for = "*.jpg"
+  [headers.values]
+  Cache-Control =  "max-age=31536000"
+[[headers]]
   for = "/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
