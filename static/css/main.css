@@ -36,18 +36,6 @@ body {
   font-family: myfont;
   font-size: 14px;
   font-weight: 400;
-  height: 0;
-  overflow: hidden;
-  transition: height 0.66s ease-out;
-}
-
-body.loaded {
-  font-family: myfont;
-  font-size: 14px;
-  font-weight: 400;
-  height: auto;
-  overflow: visible;
-  transition: height 0.66s ease-out;
 }
 
 
