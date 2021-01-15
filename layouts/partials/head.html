@@ -17,8 +17,8 @@
     {{if in .URL "main.css" }}<link rel="preload"  media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ .URL | absURL }} "  as="style" >{{end}}
     <link rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ .URL | absURL }} ">
   {{ end }}
-  <link rel="preload" href="/fonts/ufonts.com_tw-cen-mt.ttf" as="font" type="font/ttf" crossorigin>
-  <!--<link rel="preload" href="/fonts/fontawesome-webfont.woff?v=4.2.0" as="font" type="font/woff" crossorigin>-->
+  <link rel="preload" href="/fonts/ufonts.com_tw-cen-mt.ttf" as="font" type="font/ttf" as = "style" crossorigin>
+  <link rel="preload" href="/fonts/fontawesome-webfont.woff?v=4.2.0" as="font" type="font/woff"  as = "style" crossorigin>
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }} " type="image/x-icon">
