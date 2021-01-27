@@ -74,7 +74,7 @@ subscription:
 
 ################ Contact #######################
 contact:
-  enable : true
+  enable : true   
   title: "Reserve <span>Today </span>"
   subtitle: ""
   formAction : "#" #contact form works with formspree.io
