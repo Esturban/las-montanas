@@ -22,7 +22,11 @@ img {
     height: auto;
     width: 100%;
 }
-
+img.figlio{
+    aspect-ratio: attr(width) / attr(height);
+    height: auto;
+    width: 75%;
+}
 /*--
     Common Css
 --*/
