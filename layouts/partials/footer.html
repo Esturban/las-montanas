@@ -37,11 +37,11 @@
             <!-- .col-md-4 close -->
             <div class="col-md-4">
                 <div class="block wow fadeInLeft" data-wow-delay="1100ms">
-                    <div class="gallary">
+                    <div class="gallery">
                         <h3>{{ with .Site.Params.footer.galleryTitle }} {{ . | safeHTML }} {{ end }}</h3>
                         <ul class="gallery">
                             {{ range $.Site.Params.footer.gallery }}
-                            <li><a href="{{ .image | absURL }}" class="venobox" data-gall="footerGallery"><img class="img-responsive" src="{{ .image | absURL }}" alt=""></a></li>
+                            <li><a href="{{ .image | absURL }}" class="venobox" data-gall="footerGallery"><img class="img-responsive" loading="lazy" src="{{ .image | absURL }}" alt=""></a></li>
                             {{ end }}
                         </ul>
                     </div>
