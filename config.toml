@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = ""
+baseURL = "/"
 languageCode = "en-us"
 title = "Las Montañas Inn | Wellness Travel Destination in Rural Majestic Colombia"
 theme = "restaurant-hugo"
