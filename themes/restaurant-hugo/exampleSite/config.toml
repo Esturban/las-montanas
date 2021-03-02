@@ -1,86 +1,92 @@
 ######################## default configuration ####################
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Restaurant Theme By Themefisher"
-theme="restaurant-hugo"
-summaryLength = "7"
+title = "Restaurant Hugo"
+theme = "restaurant-hugo"
+summaryLength = "10"
 paginate = 4
 
 ############################# Plugins ##############################
-[params.plugins]
 
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "css/bootstrap.min.css"
-  [[params.plugins.css]]
-  URL = "css/slick.css"
-  [[params.plugins.css]]
-  URL = "css/font-awesome.min.css"
-  [[params.plugins.css]]
-  URL = "css/animate.min.css"
-  [[params.plugins.css]]
-  URL = "css/venobox.css"
-  [[params.plugins.css]]
-  URL = "css/main.css"
-  [[params.plugins.css]]
-  URL = "css/responsive.css"
+# CSS Plugins
+[[params.plugins.css]]
+URL = "css/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "css/slick.css"
+[[params.plugins.css]]
+URL = "css/font-awesome.min.css"
+[[params.plugins.css]]
+URL = "css/animate.min.css"
+[[params.plugins.css]]
+URL = "css/venobox.css"
+[[params.plugins.css]]
+URL = "css/main.css"
+[[params.plugins.css]]
+URL = "css/responsive.css"
 
-  # JS Plugins
-  [[params.plugins.js]]
-  URL = "js/jquery.min.js"
-  [[params.plugins.js]]
-  URL = "js/bootstrap.min.js"
-  [[params.plugins.js]]
-  URL = "js/slick.min.js"
-  [[params.plugins.js]]
-  URL = "js/wow.min.js"
-  [[params.plugins.js]]
-  URL = "js/venobox.min.js"
-  [[params.plugins.js]]
-  URL = "js/main.js"
+# JS Plugins
+[[params.plugins.js]]
+URL = "js/jquery.min.js"
+[[params.plugins.js]]
+URL = "js/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "js/slick.min.js"
+[[params.plugins.js]]
+URL = "js/wow.min.js"
+[[params.plugins.js]]
+URL = "js/venobox.min.js"
+[[params.plugins.js]]
+URL = "js/main.js"
 
 ############################## navigation ###############################
-[menu]
-	
-	[[menu.main]]
-  name = "Home"
-  URL = "hero-area"
-  weight = 1
 
-  [[menu.main]]
-  name = "About Us"
-  URL = "about-us"
-  weight = 2
+[[menu.main]]
+name = "Home"
+URL = "hero-area"
+weight = 1
 
-  [[menu.main]]
-  name = "Blog"
-  URL = "blog"
-  weight = 3
+[[menu.main]]
+name = "About Us"
+URL = "about-us"
+weight = 2
 
-  [[menu.main]]
-  name = "Price"
-  URL = "price"
-  weight = 4
+[[menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 3
 
-  [[menu.main]]
-  name = "News"
-  URL = "subscribe"
-  weight = 5
+[[menu.main]]
+name = "Price"
+URL = "price"
+weight = 4
 
-  [[menu.main]]
-  name = "Contact Us"
-  URL = "contact-us"
-  weight = 6
+[[menu.main]]
+name = "News"
+URL = "subscribe"
+weight = 5
+
+[[menu.main]]
+name = "Contact Us"
+URL = "contact-us"
+weight = 6
 
 
 #################### default parameters ################################
 [params]
 logo = "images/logo.png"
-copyright = "Copyright 2019 - All Rights Reserved.Design and Developed By Themefisher.com"
+# meta data
+author = "Themefisher"
+description = "This is meta description"
+# google analitycs ID
+google_analitycs_id = "Your ID"
+# mainSections
+main_sections = ["post"]
+# copyright
+copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
 
 # Preloader
 [params.preloader]
-enable = true
+enable = false
 preloader = "" # use .png , .svg or .gif format
 
 ################################### Footer ############################

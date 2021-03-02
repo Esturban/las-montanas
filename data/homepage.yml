@@ -33,7 +33,7 @@ blog:
   title : "Things to <span>Do</span>"
   bgImage : "images/blog/IMG_1863.JPG"
   overlay:
-    enable : true
+    enable : false
 
 
 ################# food Menu ################

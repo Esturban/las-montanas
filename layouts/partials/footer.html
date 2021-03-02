@@ -81,5 +81,8 @@
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range .Site.Params.plugins.js}}
-<script src="{{ .URL | absURL }}"></script>
+  {{ if or (eq  .URL "main.js")  (eq  .URL "jquery.min.js") }} <script src="{{ .URL | absURL }}" defer></script>
+  {{ else }} <script src="{{ .URL | absURL }}"></script>
+  {{ end }}
 {{ end }}
+

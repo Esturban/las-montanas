@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = ""
+baseURL = "/"
 languageCode = "en-us"
 title = "Las Montañas Inn | Wellness Travel Destination in Rural Majestic Colombia"
 theme = "restaurant-hugo"
@@ -13,19 +13,19 @@ googleAnalytics = "UA-81176691-4"
 
   # CSS Plugins
   [[params.plugins.css]]
-  URL = "css/bootstrap.min.css"
+  URL = "/css/bootstrap.min.css"
   [[params.plugins.css]]
-  URL = "css/slick.css"
+  URL = "/css/slick.css"
   [[params.plugins.css]]
-  URL = "css/font-awesome.min.css"
+  URL = "/css/font-awesome.min.css"
   [[params.plugins.css]]
-  URL = "css/animate.min.css"
+  URL = "/css/animate.min.css"
   [[params.plugins.css]]
-  URL = "css/venobox.css"
+  URL = "/css/venobox.css"
   [[params.plugins.css]]
-  URL = "css/main.css"
+  URL = "/css/main.css"
   [[params.plugins.css]]
-  URL = "css/responsive.css"
+  URL = "/css/responsive.css"
 
   # JS Plugins
   [[params.plugins.js]]
@@ -40,7 +40,7 @@ googleAnalytics = "UA-81176691-4"
   URL = "js/venobox.min.js"
   [[params.plugins.js]]
   URL = "js/main.js"
-
+  
 ############################## navigation ###############################
 [menu]
 	
