@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo"
+command = "hugo --enableGitInfo -D"
 # Default site wide settings
 
 [context.production.environment]
@@ -9,7 +9,7 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [context.split1]
-command = "hugo --gc --minify --enableGitInfo"
+command = "hugo --enableGitInfo -D"
 
 [context.split1.environment]
 HUGO_VERSION = "0.80.0"
