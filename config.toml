@@ -40,7 +40,7 @@ googleAnalytics = "UA-81176691-4"
   URL = "js/venobox.min.js"
   [[params.plugins.js]]
   URL = "js/main.js"
-
+  
 ############################## navigation ###############################
 [menu]
 	
