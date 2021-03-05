@@ -24,9 +24,9 @@ staticDir = ["static"]
   [[params.plugins.css]]
   URL = "/css/venobox.css"
   [[params.plugins.css]]
-  URL = "/css/responsive.css"
-  [[params.plugins.css]]
   URL = "/css/main.css"
+  [[params.plugins.css]]
+  URL = "/css/responsive.css"
   
   # JS Plugins
   [[params.plugins.js]]
