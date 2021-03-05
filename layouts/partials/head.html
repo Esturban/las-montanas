@@ -14,7 +14,7 @@
 
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}
-  {{ if in .URL "main.css" }}
+  {{ if or (eq .URL "main.css") (eq .URL "responsive.css") }}
     <link rel="stylesheet"  media="print" type ="text/css" onload="this.onload=null;this.removeAttribute('media');" href="{{ .URL | absURL }}">
   {{ else }}
     <link rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ .URL | absURL }}">

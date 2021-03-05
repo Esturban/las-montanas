@@ -10,6 +10,8 @@
                     <div class="pricing-list">
                         <div class="title">
                             <h3>{{ .subtitle | markdownify }}</h3>
+                            <br>
+                            <h5>{{ .subheader | markdownify }}</h5>
                         </div>
                         <ul>
                             {{ range .pricingItem }}
