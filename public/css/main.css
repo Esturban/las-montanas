@@ -13,10 +13,6 @@
   padding-bottom: 10px;
 } 
 
-section#footer{
-  padding-top:20px;
-}
-
 img {
     aspect-ratio: attr(width) / attr(height);
     height: auto;
@@ -329,15 +325,8 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   text-align: center;
 }
 
-#about-us .block > p {
-  color: #919191;
-  font-size: 22px;
-  line-height: 26px;
-  padding: 40px 0px;
-}
-
 #about-us .block  p {
-  color: #989898;
+  color: #202020;
   font-size: 22px;
   line-height: 26px;
   padding: 40px 0px;
@@ -347,7 +336,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
     blog Start
 --*/
 #blog {
-  padding-top: 75px;
+  padding-top: 25px;
   padding-bottom: 100px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -370,7 +359,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   float: left;
   background: #fff;
   text-align: center;
-  color: #959595;
+  color: #202020;
   transform: 1s;
   margin-bottom: 10px;
 }
@@ -535,18 +524,18 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
     price Start
 --*/
 #price {
-  padding: 70px 0px;
+  padding: 30px 0px;
 }
 
 #price .block > p {
-  color: #989898;
+  color: #202020;
   font-size: 22px;
   line-height: 26px;
   padding: 40px 0px 0;
   text-align: center;
 }
 
-#price .block .pricing-list {
+#price .block .pricing-list { 
   padding-top: 85px;
 }
 
@@ -586,7 +575,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 
 #price .block .pricing-list ul li .item p {
   padding: 12px 0 0px;
-  color: #949494;
+  color: #202020;
 }
 
 #price .block .pricing-list .btn {
@@ -718,7 +707,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
     contact-us Start
 --*/
 #contact-us {
-  padding: 70px 0px;
+  padding: 30px 0px;
 }
 
 #contact-us .block .title {
@@ -997,20 +986,8 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   color: #fff;
   border-color: #FF4F02
 }
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  
-  p.wow { 
-      font-size: 18px;
-  font-weight: 400;
-  line-height: 20px;
-  margin: 0px;
-  font-family: myfont;
-  }
-}
 
 input::-webkit-input-placeholder, input::-moz-placeholder,input:-ms-input-placeholder, input:-moz-placeholder { /* Chrome/Opera/Safari */
-  color: pink;
   font-size:18px;
 }
 

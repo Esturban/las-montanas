@@ -5,7 +5,7 @@
 -----------------------------------------------------------------
 cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px){
   /*--
     custom heading Start
 --*/
@@ -133,7 +133,7 @@ px      68    160    252    */
 --*/
   .heading {
     text-align: center;
-    font-size: 22px;
+    font-size: 28px;
   }
   .heading span {
     font-size: 28px;
@@ -208,8 +208,13 @@ px      68    160    252    */
   #about-us {
     padding: 70px 0;
   }
+  
   #about-us .block p {
+    color: #202020;
     padding: 40px 0px 0px;
+    font-size:16px;
+    line-height: 26px;
+    
   }
   /*--
     custom title Start
@@ -359,4 +364,69 @@ px      68    160    252    */
     text-align: center;
     padding-top: 0px;
   }
+  
+    /* For mobile phones: */
+  
+  p.wow { 
+      font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0px;
+  font-family: myfont;
+  }
+  
+  #price .block > p {
+    color: #202020;
+    padding: 40px 0px 0px;
+    font-size:16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+#about-us .block p {
+    color: #202020;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 40px 0px;
+}
+
+#blog {
+  padding-bottom:10px ;
+}
+
+#price {
+  padding-top:10px ;
+  padding-bottom:10px ;
+  
+}
+
+#contact-us{
+  padding-top:5px ;
+  padding-bottom:10px ;
+  
+}
+
+#blog{ 
+  padding-top:10px ;
+  padding-bottom:10px ;
+  
+}
+
+.pricing-list > ul{
+  padding-bottom:10px;
+}
+li.fadeInUp > div > p{
+  font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+margin: 0px;
+font-family: myfont;
+}
+input::-webkit-input-placeholder, input::-moz-placeholder,input:-ms-input-placeholder, input:-moz-placeholder { /* Chrome/Opera/Safari */
+  font-size:12px;
+}
+#price > div > div > div > div > h1{
+  
+}
+
 }
