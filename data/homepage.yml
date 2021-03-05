@@ -41,8 +41,9 @@ pricing:
   enable : true
   title : "<span>EXPLORE</span> Colombia with ease"
 #  description: "Every package includes a private room (full bed) with en-suite bathroom and  Colombian decor throughout.  <p>Santa Barbara's landscape unfolds before you with a feast for your eyes. Kick your feet up and enjoy the marvelous mountain range view overlooking the jungles of Colombia.</p><p>Your day begins with enjoying fresh organic coffee grown on the grounds to accompany an international breakfast. You notice the pool engulfed in natural light, with cascading water features and wildlife, enhancing the ethereal experience.</p>"
-  description: "Every package includes a private room (full bed) with en-suite bathroom and Colombian decor throughout the sweet as well as 3 daily meals.  <p>Santa Barbara's landscape unfolds before you with a feast for your eyes. Kick your feet up and enjoy the marvelous mountain range view overlooking the jungles of Colombia.</p><p>Your day begins with enjoying fresh organic coffee grown on the grounds to accompany an international breakfast. You notice the pool engulfed in natural light, with cascading water features and wildlife, enhancing the ethereal experience.</p>"
+  description: "Every package includes a private room (full bed) with en-suite bathroom and Colombian decor throughout the sweet as well as 3 daily meals.  <p>Santa Barbara's landscape unfolds before you with a feast for your eyes. Kick your feet up and enjoy the marvelous mountain range view overlooking the mountain ranges of Colombia.</p> <p>Your day begins with enjoying fresh organic coffee grown on the grounds to accompany a paisa breakfast. You notice the pool engulfed in natural light, with cascading water features and wildlife, enhancing the ethereal experience.</p>"
   subtitle : "NIGHTLY AND WEEKLY <span>RATES</span>"
+  subheader: "All stays include 3 daily meals: paisa breakfast, country-style lunch and an international dinner"
   pricingItem:
   - title: "One night for one"
     description: "An easy stop along the way of your adventure? Spend some time in Santa Barbara with our guidance in the town and neighboring villages."
