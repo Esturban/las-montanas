@@ -2,8 +2,31 @@
 @font-face {
   font-family: myfont;
   src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+  font-display: swap;
 }
 
+.venobox > img{
+  padding:10px;
+}
+
+.section.blog-single-page{
+  padding-bottom: 10px;
+} 
+
+section#footer{
+  padding-top:20px;
+}
+
+img {
+    aspect-ratio: attr(width) / attr(height);
+    height: auto;
+    width: 100%;
+}
+img.figlio{
+    aspect-ratio: attr(width) / attr(height);
+    height: auto;
+    width: 75%;
+}
 /*--
     Common Css
 --*/
@@ -26,6 +49,7 @@ body {
   font-weight: 400;
 }
 
+
 a:focus{
   outline: 0;
 }
@@ -45,17 +69,17 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
 }
 
 p {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 20px;
   margin: 0px;
@@ -64,8 +88,17 @@ p {
 
 ul {
   padding: 0;
+  font-size: 18px;
   margin: 0;
   list-style: none;
+}
+/*Single post content*/
+.post-single-content > ul {
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px;
+  list-style: circle;
+  
 }
 
 a,
@@ -296,9 +329,16 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   text-align: center;
 }
 
-#about-us .block p {
-  color: #959595;
-  font-size: 16px;
+#about-us .block > p {
+  color: #919191;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 40px 0px;
+}
+
+#about-us .block  p {
+  color: #989898;
+  font-size: 22px;
   line-height: 26px;
   padding: 40px 0px;
 }
@@ -491,12 +531,6 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   margin-right: auto;
 }
 
-
-
-
-
-
-
 /*--
     price Start
 --*/
@@ -504,11 +538,11 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   padding: 70px 0px;
 }
 
-#price .block>p {
-  color: #9D9D9D;
-  font-size: 16px;
+#price .block > p {
+  color: #989898;
+  font-size: 22px;
   line-height: 26px;
-  padding: 40px 133px 0;
+  padding: 40px 0px 0;
   text-align: center;
 }
 
@@ -588,6 +622,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 }
 
 #mc_embed_signup .mc-field-group input.email {
+  font-size:22px;
   background: #fff;
   opacity: 0.9;
   border: none;
@@ -611,7 +646,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   background: #7EC3BB;
   color: #fff;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 22px;
   letter-spacing: 2px;
   text-transform: uppercase;
   -webkit-transition: .3s all;
@@ -705,9 +740,12 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 
 #contact-us .block form input:focus {
   border: 1px solid #7EC3BB;
+  font-size:22px;
+  
 }
 
 #contact-us .block form textarea {
+  font-size:22px;
   height: 140px;
   border-radius: 0px;
   box-shadow: none;
@@ -959,3 +997,21 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   color: #fff;
   border-color: #FF4F02
 }
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+  p.wow { 
+      font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0px;
+  font-family: myfont;
+  }
+}
+
+input::-webkit-input-placeholder, input::-moz-placeholder,input:-ms-input-placeholder, input:-moz-placeholder { /* Chrome/Opera/Safari */
+  color: pink;
+  font-size:18px;
+}
+
+

@@ -7,6 +7,7 @@ summaryLength = "7"
 paginate = 8
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$","\\.knit\\.md$", "\\.utf8\\.md$", "_cache$"]
 googleAnalytics = "UA-81176691-4"
+staticDir = ["static"]
 #defaultContentLanguage = "en"
 ############################# Plugins ##############################
 [params.plugins]
@@ -23,10 +24,10 @@ googleAnalytics = "UA-81176691-4"
   [[params.plugins.css]]
   URL = "/css/venobox.css"
   [[params.plugins.css]]
-  URL = "/css/main.css"
-  [[params.plugins.css]]
   URL = "/css/responsive.css"
-
+  [[params.plugins.css]]
+  URL = "/css/main.css"
+  
   # JS Plugins
   [[params.plugins.js]]
   URL = "js/jquery.min.js"
