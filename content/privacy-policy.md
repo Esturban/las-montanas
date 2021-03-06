@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-date: 2020-01-04T00:23:59-05:00
+date: 2019-01-04T00:23:59-05:00
 image: images/DSC01420.jpg
 draft: false
 ---  

@@ -1,9 +1,9 @@
-// Preloader js    
-$(window).on('load', function () {
-    $('.preloader').fadeOut(100);
-});
-
 $(document).ready(function () {
+
+    // Preloader js    
+    $(window).on('load', function () {
+        $('.preloader').fadeOut(100);
+    });
 
     // autohiding navbar on mobile devices
     $('.navbar-collapse a').click(function () {
@@ -72,6 +72,8 @@ $(document).ready(function () {
             return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
         }
     });
+
+     document.getElementById(elmId).innerHTML = value;
 
     //Initiat WOW JS
     new WOW().init();

@@ -73,91 +73,9 @@ $(document).ready(function () {
         }
     });
 
+     document.getElementById(elmId).innerHTML = value;
+
     //Initiat WOW JS
     new WOW().init();
-    
-    function ReLoadImages(){
-    $('img[data-lazysrc]').each( function(){
-        //* set the img src from data-src
-        $( this ).attr( 'src', $( this ).attr( 'data-lazysrc' ) );
-        }
-    );
-    }
-
-    document.addEventListener('readystatechange', event => {
-    if (event.target.readyState === "interactive") {  //or at "complete" if you want it to execute in the most last state of window.
-        ReLoadImages();
-    }
-});
-
-// Formt date as YYYY-MM-DD
-function formatISOLocal(d) {
-  let z = n => ('0' + n).slice(-2);
-  return d.getFullYear()+'-'+z(d.getMonth()+1) + '-' + z(d.getDate());
-}
-
-window.onload = function() {
-  let sinp = document.querySelector('#start');
-  let d = new Date();
-  sinp.min = formatISOLocal(d);
-  sinp.defaultValue = sinp.min;
-  ds.setFullYear(ds.getFullYear() + 1);
-  sinp.max = formatISOLocal(d);
-  // Debug
-  console.log(inp.outerHTML);
-}
-
-window.onload = function() {
-  let inp = document.querySelector('#end');
-  let d = new Date();
-  inp.min = formatISOLocal(d);
-  inp.defaultValue = inp.min;
-  d.setFullYear(d.getFullYear() + 1);
-  inp.max = formatISOLocal(d);
-  // Debug
-  console.log(inp.outerHTML);
-}
-/*
-  if ('loading' in HTMLImageElement.prototype) {
-    const images = document.querySelectorAll('img[loading="lazy"]');
-    images.forEach(img => {
-      img.src = img.dataset.src;
-    });
-  } else {
-    // Dynamically import the LazySizes library
-    const script = document.createElement('script');
-    script.src =
-      'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
-    document.body.appendChild(script);
-  }
-  */
-          // to defer the loading of stylesheets
-        // just add it right before the </body> tag
-        // and before any javaScript file inclusion (for performance)  
-        function loadStyleSheet(src){
-            if (document.createStyleSheet) document.createStyleSheet(src);
-            else {
-                var stylesheet = document.createElement('link');
-                stylesheet.href = src;
-                stylesheet.rel = 'stylesheet';
-                stylesheet.type = 'text/css';
-                document.getElementsByTagName('head')[0].appendChild(stylesheet);
-            }
-        }
-
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth()+1; //January is 0!
-var yyyy = today.getFullYear();
- if(dd<10){
-        dd='0'+dd
-    } 
-    if(mm<10){
-        mm='0'+mm
-    } 
-
-today = yyyy+'-'+mm+'-'+dd;
-document.getElementById("datefield").setAttribute("max", today);
-
 
 });
