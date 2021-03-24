@@ -26,7 +26,7 @@ Las Montañas offers their own pick up and drop off service for members of your 
 In case you choose to not drive or take a taxi, you can take a bus to the city from the airport and when arriving to "Terminal Sur" there are two bus routes that can bring you to the finca:  
 {{< break >}}  
 - Santa Barbara - this bus will take you to the city and you can take the taxi from the town to Atanasio  
-- 
+- Pintada y Tamesis - This route brings you to Bola Roja which is at the entrance of the village where you walk the rest of the path to arrive at Las Montañas   
 {{< break >}}  
 
   
