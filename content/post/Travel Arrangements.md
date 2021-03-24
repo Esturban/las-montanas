@@ -14,7 +14,7 @@ To get to the finca, you can take the Santa Helena Tunnel to Medellin and go sou
 
 ## Do you offer travel arrangements     
 {{< break >}}  
-Las Montañas offers their own pick up and drop off service for members of your party which includes tolls for travel to and from the airport.  Here is the price list:  
+Las Montañas offers their own pick up and drop off service for members of your party which includes tolls for travel to and from the airport.  Here is the price list:    
 {{< break >}}  
 - 1 guest - $100 USD  
 - 2 guests - $125 USD  
