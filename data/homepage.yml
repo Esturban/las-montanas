@@ -78,4 +78,3 @@ contact:
   enable : true   
   title: "Reserve <span>Today </span>"
   subtitle: "How do you get to the finca?  Check out our [blog post about travel arrangments](/post/travel-arrangements \"Reserve Now\")"
-  formAction : "#" #contact form works with formspree.io

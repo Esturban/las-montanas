@@ -105,6 +105,10 @@ a:active {
   font-size: 18px;
 }
 
+h3.title > a{
+  text-decoration: none !important;
+  font-size: 24px;
+}
 .section {
   padding: 100px 0;
 }
