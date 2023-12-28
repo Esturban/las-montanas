@@ -1,7 +1,7 @@
 ################## Hero area ##################
 heroArea:
   enable : true
-  bgImage : "images/DSC01779_rsz.jpg"
+  bgImage : "images/DSC01779.jpg"
   overlay:
     enable : false
 
@@ -9,14 +9,14 @@ heroArea:
 gallery:
   enable : true
   sliderItem:
-    - image : "images/slider/r/f1.jpg"
-    - image : "images/slider/r/f2.jpg"
-    - image : "images/slider/r/f3.jpg"
-    - image : "images/slider/r/f9.jpg" 
-    - image : "images/slider/r/f5.jpg"
-    - image : "images/slider/r/f6.jpg"
-    - image : "images/slider/r/f7.jpg"
-    - image : "images/slider/r/f8.jpg"
+    - image : "images/slider/f1.jpg"
+    - image : "images/slider/f2.jpg"
+    - image : "images/slider/f3.jpg"
+    - image : "images/slider/f9.jpg" 
+    - image : "images/slider/f5.jpg"
+    - image : "images/slider/f6.jpg"
+    - image : "images/slider/f7.jpg"
+    - image : "images/slider/f8.jpg"
   overlay:
     enable: true
 
