@@ -10,9 +10,26 @@
                     </div>
                     <div class="gallery-slider">
                         {{ range .sliderItem }}
-                        <a href="{{ .image | absURL }}" class="venobox" data-gall="sliderGallery">
-                          <img class="img-responsive" loading="lazy" src="{{ .image | absURL }}" alt="" width = "285" height = "178">
-                        </a>
+                        {{ $image := resources.Get .image }}
+                        {{ if $image }}
+                          {{ $webpImage320 := ($image.Fit "320x178").ToWebP }}
+                          {{ $webpImage480 := ($image.Fit "480x268").ToWebP }}
+                          {{ $webpImage800 := ($image.Fit "800x446").ToWebP }}
+                          <a href="{{ $image.RelPermalink }}" class="venobox" data-gall="sliderGallery">
+                            <img class="img-responsive" loading="lazy" srcset="
+                            {{ $webpImage320.RelPermalink }} 320w,
+                            {{ $webpImage480.RelPermalink }} 480w,
+                            {{ $webpImage800.RelPermalink }} 800w"
+                            sizes="(max-width: 320px) 280px,
+                                   (max-width: 480px) 440px,
+                                   800px"
+                            src="{{ $webpImage800.RelPermalink }}" alt="" width="285" height="178">
+                          </a>
+                        {{ else }}
+                          <a href="{{ .image | absURL }}" class="venobox" data-gall="sliderGallery">
+                            <img class="img-responsive" loading="lazy" src="{{ .image | absURL }}" alt="" width="285" height="178">
+                          </a>
+                        {{ end }}
                         {{ end }}
                     </div>
                 </div>
@@ -20,5 +37,5 @@
         </div><!-- .row close -->
     </div><!-- .container close -->
 </section><!-- slider close -->
-{{end}}
-{{end}}
+{{ end }}
+{{ end }}

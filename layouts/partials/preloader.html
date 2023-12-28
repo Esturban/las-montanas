@@ -2,7 +2,22 @@
 {{ "<!-- preloader start -->" | safeHTML }}
 <div class="preloader">
   {{ if ne .Site.Params.preloader.preloader "" }}
-  <img src="{{ .Site.Params.preloader.preloader | absURL }} " alt="preloader">
+  {{ $preloaderImage := resources.Get .Site.Params.preloader.preloader }}
+  {{ if $preloaderImage }}
+    {{ $preloaderImageWebP320 := ($preloaderImage.Fit "320x320").ToWebP }}
+    {{ $preloaderImageWebP480 := ($preloaderImage.Fit "480x480").ToWebP }}
+    {{ $preloaderImageWebP800 := ($preloaderImage.Fit "800x800").ToWebP }}
+    <img srcset="
+    {{ $preloaderImageWebP320.RelPermalink }} 320w,
+    {{ $preloaderImageWebP480.RelPermalink }} 480w,
+    {{ $preloaderImageWebP800.RelPermalink }} 800w"
+    sizes="(max-width: 320px) 280px,
+           (max-width: 480px) 440px,
+           800px"
+    src="{{ $preloaderImageWebP800.RelPermalink }}" alt="preloader">
+  {{ else }}
+    <img src="{{ .Site.Params.preloader.preloader | absURL }}" alt="preloader">
+  {{ end }}
   {{ end }}
 </div>
 {{ "<!-- preloader end -->" | safeHTML }}
