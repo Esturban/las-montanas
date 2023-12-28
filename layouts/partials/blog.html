@@ -4,13 +4,30 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <h1 class="heading">{{ .Site.Data.homepage.blog.title | markdownify }}</h1>
+                    <h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">{{ .Site.Data.homepage.blog.title | markdownify }}</h1>
                     <ul>
                         {{ $paginator := .Paginate .Site.RegularPages }}
                         {{ range first 5 ($paginator.Pages) }}
                         <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
                             <div class="blog-img">
-                            <a href="{{ .Permalink }}"> <img src="{{ .Params.Image | absURL }}" alt="post-image" class="img-responsive"></a>  
+                            {{ $postImage := resources.GetMatch .Params.Image }}
+                            {{ if $postImage }}
+                              {{ $webpPostImage320 := ($postImage.Fill "320x178 webp q90") }}
+                              {{ $webpPostImage480 := ($postImage.Fill "480x268 webp q90") }}
+                              {{ $webpPostImage800 := ($postImage.Fill "800x446 webp q90") }}
+                              <a href="{{ .Permalink }}">
+                                <img class="img-responsive" loading="lazy" srcset="
+                                {{ $webpPostImage320.RelPermalink }} 320w,
+                                {{ $webpPostImage480.RelPermalink }} 480w,
+                                {{ $webpPostImage800.RelPermalink }} 800w"
+                                sizes="(max-width: 320px) 280px,
+                                       (max-width: 480px) 440px,
+                                       800px"
+                                src="{{ $webpPostImage800.RelPermalink }}" alt="post-image">
+                              </a>
+                            {{ else }}
+                              <a href="{{ .Permalink }}"><img src="{{ .Params.Image | absURL }}" alt="post-image" class="img-responsive"></a>
+                            {{ end }}
                             </div>
                             <div class="content-right">
                                 <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
@@ -20,9 +37,8 @@
                         {{ end }}
                     </ul>
                 </div>
-            </div><!-- .col-md-12 close -->
-            {{ template "_internal/pagination.html" . }}
-        </div><!-- .row close -->
-    </div><!-- .containe close -->
-</section><!-- #blog close -->
+            </div>
+        </div>
+    </div>
+</section>
 {{end}}

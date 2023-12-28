@@ -13,8 +13,8 @@
                         {{ $image := resources.GetMatch .image }}
                         {{ if $image }}
                           {{ $webpImage320 := ($image.Fill "320x178 webp q90") }}
-                          {{ $webpImage480 := ($image.Fit "480x268 webp q90")}}
-                          {{ $webpImage800 := ($image.Fit "800x446 webp q90") }}
+                          {{ $webpImage480 := ($image.Fill "480x268 webp q90")}}
+                          {{ $webpImage800 := ($image.Fill "800x446 webp q90") }}
                           <a href="{{ $image.RelPermalink }}" class="venobox" data-gall="sliderGallery">
                             <img class="img-responsive" loading="lazy" srcset="
                             {{ $webpImage320.RelPermalink }} 320w,
@@ -23,11 +23,11 @@
                             sizes="(max-width: 320px) 280px,
                                    (max-width: 480px) 440px,
                                    800px"
-                            src="{{ $webpImage800.RelPermalink }}" alt="" width="285" height="178">
+                            src="{{ $image.RelPermalink }}" alt="" width="285" height="178">
                           </a>
                         {{ else }}
                           <a href="{{ .image | absURL }}" class="venobox" data-gall="sliderGallery">
-                            <img class="img-responsive" loading="lazy" src="{{ .image | absURL }}" alt="" width="285" height="178">
+                            <img class="img-responsive" loading="lazy" src="{{ $image.RelPermalink }}" alt="" width="285" height="178">
                           </a>
                         {{ end }}
                         {{ end }}

@@ -8,8 +8,8 @@
   
   {{ if $bgImage }}
   {{ $webpImage320 := ($bgImage.Fill "320x178 webp q90") }}
-  {{ $webpImage480 := ($bgImage.Fit "480x268 webp q90")}}
-  {{ $webpImage800 := ($bgImage.Fit "800x446 webp q90") }}
+  {{ $webpImage480 := ($bgImage.Fill "480x268 webp q90")}}
+  {{ $webpImage800 := ($bgImage.Fill "800x446 webp q90") }}
 
   <img class="img-responsive" srcset="
   {{ $webpImage320.RelPermalink }} 320w,
