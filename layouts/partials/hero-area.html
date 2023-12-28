@@ -1,8 +1,20 @@
 {{ "<!-- header-img start  -->" | safeHTML }}
 {{ if .Site.Data.homepage.heroArea.enable }}
 {{ with .Site.Data.homepage.heroArea }}
-<section id="hero-area" {{ if .overlay.enable }} class="overlay" {{ end }}>
-  <img class="img-responsive" src="{{ .bgImage | absURL }}" alt = "hero-image">
+<section id="hero-area" {{ if .overlay.enable }}class="overlay"{{ end }}>
+  {{ $bgImage := resources.Get .bgImage }}
+  {{ if $bgImage }}
+  <img class="img-responsive" srcset="
+  {{ ($bgImage.Fit "320x320").RelPermalink }} 320w,
+  {{ ($bgImage.Fit "480x480").RelPermalink }} 480w,
+  {{ ($bgImage.Fit "800x800").RelPermalink }} 800w"
+  sizes="(max-width: 320px) 280px,
+         (max-width: 480px) 440px,
+         800px"
+  src="{{ $bgImage.RelPermalink }}" alt="hero-image">
+  {{ else }}
+  <img class="img-responsive" src="{{ .bgImage | absURL }}" alt="hero-image">
+  {{ end }}
 </section>
 {{ end }}
 {{ end }}
