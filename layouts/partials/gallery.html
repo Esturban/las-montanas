@@ -10,11 +10,11 @@
                     </div>
                     <div class="gallery-slider">
                         {{ range .sliderItem }}
-                        {{ $image := resources.Get .image }}
+                        {{ $image := resources.GetMatch .image }}
                         {{ if $image }}
-                          {{ $webpImage320 := ($image.Fit "320x178").ToWebP }}
-                          {{ $webpImage480 := ($image.Fit "480x268").ToWebP }}
-                          {{ $webpImage800 := ($image.Fit "800x446").ToWebP }}
+                          {{ $webpImage320 := ($image.Fill "320x178 webp q90") }}
+                          {{ $webpImage480 := ($image.Fit "480x268 webp q90")}}
+                          {{ $webpImage800 := ($image.Fit "800x446 webp q90") }}
                           <a href="{{ $image.RelPermalink }}" class="venobox" data-gall="sliderGallery">
                             <img class="img-responsive" loading="lazy" srcset="
                             {{ $webpImage320.RelPermalink }} 320w,

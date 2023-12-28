@@ -2,11 +2,15 @@
 {{ if .Site.Data.homepage.heroArea.enable }}
 {{ with .Site.Data.homepage.heroArea }}
 <section id="hero-area" {{ if .overlay.enable }}class="overlay"{{ end }}>
-  {{ $bgImage := resources.Get .bgImage }}
+
+  {{$bgPath := .bgImage}}
+  {{ $bgImage := resources.GetMatch $bgPath }}
+  
   {{ if $bgImage }}
-  {{ $webpImage320 := ($bgImage.Fit "320x320").ToWebP }}
-  {{ $webpImage480 := ($bgImage.Fit "480x480").ToWebP }}
-  {{ $webpImage800 := ($bgImage.Fit "800x800").ToWebP }}
+  {{ $webpImage320 := ($bgImage.Fill "320x178 webp q90") }}
+  {{ $webpImage480 := ($bgImage.Fit "480x268 webp q90")}}
+  {{ $webpImage800 := ($bgImage.Fit "800x446 webp q90") }}
+
   <img class="img-responsive" srcset="
   {{ $webpImage320.RelPermalink }} 320w,
   {{ $webpImage480.RelPermalink }} 480w,
@@ -14,9 +18,9 @@
   sizes="(max-width: 320px) 280px,
          (max-width: 480px) 440px,
          800px"
-  src="{{ $webpImage800.RelPermalink }}" alt="hero-image">
+  src="{{ $bgImage.RelPermalink }}" alt="hero-image">
   {{ else }}
-  <img class="img-responsive" src="{{ .bgImage | absURL }}" alt="hero-image">
+<img class="img-responsive" src="{{ .bgImage | absURL }}" alt="hero-image">
   {{ end }}
 </section>
 {{ end }}
