@@ -16,7 +16,13 @@
 						</button>
 						{{"<!-- logo -->" | safeHTML}}
 						<a class="navbar-brand" href="{{ .Site.BaseURL | absURL }}">
-							<img class="img-responsive" src="{{ .Site.Params.logo | absURL }}" alt="Logo">
+							{{ $logo := resources.GetMatch .Site.Params.logo }}
+							{{ if $logo }}
+								{{ $webpLogo := $logo.Fill "250x67 webp q90" }} <!-- Resizing to 250x67 -->
+								<img class="img-responsive" src="{{ $webpLogo.RelPermalink }}" alt="Logo" style="height: 67px; width: auto;"> <!-- Preserving aspect ratio -->
+							{{ else }}
+								<img class="img-responsive" src="{{ .Site.Params.logo | absURL }}" alt="Logo">
+							{{ end }}
 						</a>
 						{{"<!-- logo -->" | safeHTML}}
 					</div>
