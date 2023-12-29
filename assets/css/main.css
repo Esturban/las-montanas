@@ -6,7 +6,7 @@
 }
 
 .venobox > img{
-  padding:10px;
+  padding:1px;
 }
 
 .section.blog-single-page{
@@ -794,8 +794,8 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 
 #footer .gallery li {
   display: inline-block;
-  margin-right: 15px;
-  margin-bottom: 15px !important;
+  margin-right: 0px;
+  margin-bottom: 0px !important;
 }
 
 #footer .gallery li img {
