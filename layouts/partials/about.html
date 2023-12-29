@@ -5,6 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
+                    <h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">{{ .title | markdownify }}</h1>
                     {{ $image := resources.GetMatch .image }}
                     {{ if $image }}
                       {{ $webpImage320 := ($image.Fill "320x178 webp q90") }}
@@ -21,7 +22,6 @@
                     {{ else }}
                       <img class="img-responsive mx-auto" src="{{ .image | absURL }}" alt="Logo"/>
                     {{ end }}
-                    <h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">{{ .title | markdownify }}</h1>
                     <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">{{ .description | markdownify }}</p>
                 </div>
             </div>
