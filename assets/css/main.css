@@ -417,7 +417,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 
 #blog .block ul li h3:before {
   content: "";
-  position: absolute;
+  position: relative;
   left: 50%;
   bottom: 0;
   width: 90px;
@@ -577,7 +577,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 #price .block .pricing-list ul li .item .item-title h2 {
   display: inline-block;
   position: relative;
-  z-index: 99;
+  z-index: 9;
   background: #fff;
 }
 
@@ -968,7 +968,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 }
 
 .gallery-slider img {
-  padding: 20px;
+  padding: 10px;
 }
 
 .pagination {
