@@ -3,7 +3,7 @@
 {{ with .Site.Data.homepage.heroArea }}
 <section id="hero-area" {{ if .overlay.enable }}class="overlay"{{ end }}>
   
-  {{ $videoPath := resources.Get .bgVideo }} <!-- Assuming bgVideo is the key in your config for video file -->
+  {{ $videoPath := resources.Get .bgVideoIos }} <!-- Assuming bgVideo is the key in your config for video file -->
   {{ if $videoPath }}
     <video class="hero-video" autoplay loop muted playsinline>
       <source src="{{ $videoPath.RelPermalink }}" type="video/mp4">
