@@ -1,8 +1,35 @@
-{{ "<!-- header-img start  -->" | safeHTML }}
+{{ "<!-- header-media start  -->" | safeHTML }}
 {{ if .Site.Data.homepage.heroArea.enable }}
 {{ with .Site.Data.homepage.heroArea }}
-<section id="hero-area" {{ if .overlay.enable }} class="overlay" {{ end }}>
-  <img class="img-responsive" src="{{ .bgImage | absURL }}" alt = "hero-image">
+<section id="hero-area" {{ if .overlay.enable }}class="overlay"{{ end }}>
+  
+  {{ $videoPath := resources.Get .bgVideo }} <!-- Assuming bgVideo is the key in your config for video file -->
+  {{ if $videoPath }}
+    <video class="hero-video" autoplay loop muted playsinline>
+      <source src="{{ $videoPath.RelPermalink }}" type="video/mp4">
+      <!-- Fallback Image if video is not supported -->
+      <img src="{{ .bgImage | absURL }}" alt="hero-image" class="fallback-img">
+    </video>
+  {{ else }}
+    {{$bgPath := .bgImage}}
+    {{ $bgImage := resources.GetMatch $bgPath }}
+    {{ if $bgImage }}
+      {{ $webpImage320 := ($bgImage.Fill "320x178 webp q90") }}
+      {{ $webpImage480 := ($bgImage.Fill "480x268 webp q90")}}
+      {{ $webpImage800 := ($bgImage.Fill "800x446 webp q90") }}
+
+      <img class="img-responsive" srcset="
+      {{ $webpImage320.RelPermalink }} 320w,
+      {{ $webpImage480.RelPermalink }} 480w,
+      {{ $webpImage800.RelPermalink }} 800w"
+      sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
+      src="{{ $bgImage.RelPermalink }}" alt="hero-image">
+    {{ else }}
+      <img class="img-responsive" src="{{ .bgImage | absURL }}" alt="hero-image">
+    {{ end }}
+  {{ end }}
 </section>
 {{ end }}
 {{ end }}

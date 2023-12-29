@@ -1,22 +1,16 @@
 ################## Hero area ##################
 heroArea:
   enable : true
-  bgImage : "images/DSC01779_rsz.jpg"
+  bgImage : "images/full-finca.png"
+  bgVideo: "video/helical-aerial-small.webm"
   overlay:
     enable : false
 
 ################### Gallery ###################
 gallery:
   enable : true
-  sliderItem:
-    - image : "images/slider/r/f1.jpg"
-    - image : "images/slider/r/f2.jpg"
-    - image : "images/slider/r/f3.jpg"
-    - image : "images/slider/r/f9.jpg" 
-    - image : "images/slider/r/f5.jpg"
-    - image : "images/slider/r/f6.jpg"
-    - image : "images/slider/r/f7.jpg"
-    - image : "images/slider/r/f8.jpg"
+  imagePath: "images/slider"
+  title: "Relax in the balcony of Antioquia"
   overlay:
     enable: true
 
@@ -25,7 +19,7 @@ about:
   enable : true
   image : "images/colombia-2722716_760.jpg" 
   title : "Discover all <span> Medellin</span> offers"
-  description : "From Santa Barbara, this hilltop inn on the way to el Eje Cafetero is run by a group of passionate locals who have experience working as professional guides for more than 15 years.  Our mission is to show you the best parts of Antioquia by bringing you off the beaten path adventures, disconnecting you from your daily routine to focus more on enjoying the now, and into the heart of the destination.  No matter which room you choose, we guarantee your stay will be your favorite Colombian lodging experience."
+  description : "From Santa Barbara, this hilltop inn on the way to el Eje Cafetero is run by a group of passionate locals who have experience working as professional guides for more than 15 years.  \n *Our mission is to show you the best parts of Antioquia by bringing you off the beaten path adventures, disconnecting you from your daily routine to focus more on enjoying the now, and into the heart of the destination.*    \nNo matter which room you choose, we guarantee your stay will be your favorite Colombian lodging experience."
   
 ################# Blog ######################
 blog:
@@ -41,7 +35,7 @@ pricing:
   enable : true
   title : "<span>EXPLORE</span> Colombia with ease"
 #  description: "Every package includes a private room (full bed) with en-suite bathroom and  Colombian decor throughout.  <p>Santa Barbara's landscape unfolds before you with a feast for your eyes. Kick your feet up and enjoy the marvelous mountain range view overlooking the jungles of Colombia.</p><p>Your day begins with enjoying fresh organic coffee grown on the grounds to accompany an international breakfast. You notice the pool engulfed in natural light, with cascading water features and wildlife, enhancing the ethereal experience.</p>"
-  description: "Every package includes a private room (full bed) with en-suite bathroom and Colombian decor throughout the sweet as well as 3 daily meals.  <p>Santa Barbara's landscape unfolds before you with a feast for your eyes. Kick your feet up and enjoy the marvelous mountain range view overlooking the mountain ranges of Colombia.</p> <p>Your day begins with enjoying fresh organic coffee grown on the grounds to accompany a paisa breakfast. You notice the pool engulfed in natural light, with cascading water features and wildlife, enhancing the ethereal experience.</p>"
+  description: "Every package includes a private room (full bed) with en-suite bathroom and Colombian decor throughout the suite as well as 3 daily meals.  <p>Santa Barbara's landscape unfolds before you with a feast for your eyes. Kick your feet up and enjoy the marvelous mountain range view overlooking the mountain ranges of Colombia.</p> <p>Your day begins with enjoying fresh organic coffee grown on the grounds to accompany a paisa breakfast. You notice the pool engulfed in natural light, with cascading water features and wildlife, enhancing the ethereal experience.</p>"
   subtitle : "NIGHTLY AND WEEKLY <span>RATES</span>"
   subheader: "**All stays include 3 daily meals**: paisa breakfast, country-style lunch and an international dinner"
   pricingItem:

@@ -1,31 +1,31 @@
 [build]
 publish = "public"
-command = "hugo --enableGitInfo -D"
+command = "npm run build"
 # Default site wide settings
 
 [context.production.environment]
-HUGO_VERSION = "0.80.0"
+HUGO_VERSION = "0.110.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [context.split1]
-command = "hugo --enableGitInfo -D"
+command = "npm run build"
 
 [context.split1.environment]
-HUGO_VERSION = "0.80.0"
+HUGO_VERSION = "0.110.0"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "npm run build"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.80.0"
+HUGO_VERSION = "0.110.0"
 
 [context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "npm run build"
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.80.0"
+HUGO_VERSION = "0.110.0"
 # If skip_processing = true, all other settings are ignored
 [build.processing]
 skip_processing = false

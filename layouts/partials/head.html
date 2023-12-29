@@ -12,14 +12,12 @@
 {{ end }}
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 
-  {{ "<!-- plugins -->" | safeHTML }}
-  {{ range .Site.Params.plugins.css }}
-  {{ if or (eq .URL "main.css") (eq .URL "responsive.css") }}
-    <link rel="stylesheet"  media="print" type ="text/css" onload="this.onload=null;this.removeAttribute('media');" href="{{ .URL | absURL }}">
-  {{ else }}
-    <link rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ .URL | absURL }}">
-  {{ end }}
+{{ "<!-- plugins -->" | safeHTML }}
+{{ range .Site.Params.plugins.css }}
+  {{ $css := resources.Get .URL | resources.PostCSS }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" media="print" onload="this.onload=null;this.removeAttribute('media');">
 {{ end }}
+
 
   <link rel="preload" href="/fonts/ufonts.com_tw-cen-mt.ttf" as="font" type="font/ttf" as = "font" crossorigin="anonymous">
   <link rel="preload" href="/fonts/fontawesome-webfont.woff?v=4.2.0" as="font" type="font/woff"  as = "font" crossorigin="anonymous">

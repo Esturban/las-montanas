@@ -5,13 +5,28 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <img class="img-responsive mx-auto" src="{{ .image | absURL }}" alt="Logo"/>
                     <h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">{{ .title | markdownify }}</h1>
+                    {{ $image := resources.GetMatch .image }}
+                    {{ if $image }}
+                      {{ $webpImage320 := ($image.Fill "320x178 webp q90") }}
+                      {{ $webpImage480 := ($image.Fill "480x268 webp q90") }}
+                      {{ $webpImage800 := ($image.Fill "800x446 webp q90") }}
+                      <img class="img-responsive mx-auto" loading="lazy" srcset="
+                      {{ $webpImage320.RelPermalink }} 320w,
+                      {{ $webpImage480.RelPermalink }} 480w,
+                      {{ $webpImage800.RelPermalink }} 800w"
+                      sizes="(max-width: 320px) 280px,
+                             (max-width: 480px) 440px,
+                             800px"
+                      src="{{ $webpImage800.RelPermalink }}" alt="Logo">
+                    {{ else }}
+                      <img class="img-responsive mx-auto" src="{{ .image | absURL }}" alt="Logo"/>
+                    {{ end }}
                     <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">{{ .description | markdownify }}</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-{{end}}
-{{end}}
+{{ end }}
+{{ end }}
