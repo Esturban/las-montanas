@@ -162,11 +162,11 @@ px      68    160    252    */
     padding-left: 10px;
   }
   nav .block .navbar-default {
-    margin-top: 10px;
-    padding: 3px 0;
+    margin-top: 0px;
+    padding: 0px 0;
   }
   nav .block .navbar-default .navbar-header {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     margin-top: 0px;
   }
   nav .block .navbar-default .navbar-header .navbar-toggle {
@@ -206,7 +206,7 @@ px      68    160    252    */
     about-us Start
 --*/
   #about-us {
-    padding: 70px 0;
+    padding: 20px 0;
   }
   
   #about-us .block p {
@@ -229,7 +229,7 @@ px      68    160    252    */
     blog Start
 --*/
   #blog .block ul {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
   #blog .block ul li {
     float: none;
@@ -349,7 +349,7 @@ px      68    160    252    */
     padding: 60px 0 0;
   }
   #contact-us .block a {
-    padding: 20px 80px;
+    padding: 10px 0px;
     width: 100%;
     float: inherit;
   }
@@ -401,7 +401,7 @@ px      68    160    252    */
 
 #about-us .block p {
     color: #202020;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
     padding: 40px 0px;
 }
@@ -432,7 +432,7 @@ px      68    160    252    */
   padding-bottom:10px;
 }
 li.fadeInUp > div > p{
-  font-size: 16px;
+  font-size: 18px;
 font-weight: 400;
 line-height: 20px;
 margin: 0px;
