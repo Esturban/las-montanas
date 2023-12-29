@@ -11,12 +11,12 @@
                       {{ $webpImage320 := ($image.Fill "320x178 webp q90") }}
                       {{ $webpImage480 := ($image.Fill "480x268 webp q90") }}
                       {{ $webpImage800 := ($image.Fill "800x446 webp q90") }}
-                      <img class="img-responsive mx-auto" loading="lazy" srcset="
+                      <img class="img-responsive mx-auto" srcset="
                       {{ $webpImage320.RelPermalink }} 320w,
                       {{ $webpImage480.RelPermalink }} 480w,
                       {{ $webpImage800.RelPermalink }} 800w"
-                      sizes="(max-width: 320px) 280px,
-                             (max-width: 480px) 440px,
+                      sizes="(max-width: 320px) 320px,
+                             (max-width: 480px) 480px,
                              800px"
                       src="{{ $webpImage800.RelPermalink }}" alt="Logo">
                     {{ else }}
