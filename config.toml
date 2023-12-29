@@ -91,6 +91,7 @@ contactInfoTitle = "GET IN <span>TOUCH</span> "
 blogTitle = "LAS <span>MONTAÑAS</span>"
 galleryTitle = "OUR <span>VIEWS</span>"
 socialTitle = "Follow <span>US</span>"
+path = "images/slider"
 
 ############################ footer contact item
 [[params.footer.contactItem]]
@@ -109,6 +110,7 @@ icon = "fa fa-envelope"
 content = "Las Montañas Inn - info@lasmontanasinn.com"
 
 ######################### footer gallery
+
 [[params.footer.gallery]]
 image = "images/slider/r/f1.jpg"
 

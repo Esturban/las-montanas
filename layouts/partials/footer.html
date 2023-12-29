@@ -40,10 +40,25 @@
                     <div class="gallery">
                         <h3>{{ with .Site.Params.footer.galleryTitle }} {{ . | safeHTML }} {{ end }}</h3>
                         <ul class="gallery">
-                            {{ range $.Site.Params.footer.gallery }}
-                            <li><a href="{{ .image | absURL }}" class="venobox" data-gall="footerGallery"><img class="img-responsive" loading="lazy" src="{{ .image | absURL }}" alt=""></a></li>
+                            {{ range resources.Match (print .Site.Params.footer.path "/*.{jpg,jpeg}") }}
+                              {{ $webpImage320 := (.Fill "320x178 webp q90") }}
+                              {{ $webpImage480 := (.Fill "480x268 webp q90") }}
+                              {{ $webpImage800 := (.Fill "800x446 webp q90") }}
+                              <li>
+                                <a href="{{ .RelPermalink }}" class="venobox" data-gall="footerGallery">
+                                  <img class="img-responsive" loading="lazy" srcset="
+                                  {{ $webpImage320.RelPermalink }} 320w,
+                                  {{ $webpImage480.RelPermalink }} 480w,
+                                  {{ $webpImage800.RelPermalink }} 800w"
+                                  sizes="(max-width: 320px) 280px,
+                                         (max-width: 480px) 440px,
+                                         800px"
+                                  src="{{ .RelPermalink }}" alt="">
+                                </a>
+                              </li>
                             {{ end }}
-                        </ul>
+                          </ul>
+                          
                     </div>
                     <div class="social-media-link">
                         <h3>{{ with .Site.Params.footer.socialTitle }} {{ . | safeHTML }} {{ end }}</h3>
