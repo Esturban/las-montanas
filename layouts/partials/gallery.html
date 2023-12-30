@@ -15,7 +15,7 @@
                             {{ $webpImage480 := (.Fill "480x268 webp q90")}}
                             {{ $webpImage800 := (.Fill "800x446 webp q90") }}
                             <a href="{{ .RelPermalink }}" class="venobox" data-gall="sliderGallery">
-                                <img class="img-responsive" loading="lazy" srcset="
+                                <img class="img-responsive" srcset="
                                 {{ $webpImage320.RelPermalink }} 320w,
                                 {{ $webpImage480.RelPermalink }} 480w,
                                 {{ $webpImage800.RelPermalink }} 800w"
