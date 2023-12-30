@@ -2,7 +2,7 @@
 heroArea:
   enable : true
   bgImage : "images/full-finca.png"
-  bgVideoIos: "video/helical-aerial-opt-ios.mp4"
+  bgVideoIos: "video/helical-aerial-opt.mp4"
   bgVideoAndroid: "video/helical-aerial-opt.webm"
   overlay:
     enable : false
