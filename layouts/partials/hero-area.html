@@ -6,7 +6,7 @@
   {{ $videoPath := resources.Get .bgVideoIos }} <!-- Assuming bgVideo is the key in your config for video file -->
   {{ if $videoPath }}
     <video class="hero-video" autoplay loop muted playsinline>
-      <source src="{{ $videoPath.RelPermalink }}" type="video/mp4">
+      <source src="https://497809640.r.cdn36.com/assets/{{ .bgVideoIos }}" type="video/mp4">
       <!-- Fallback Image if video is not supported -->
       <img src="{{ .bgImage | absURL }}" alt="hero-image" class="fallback-img">
     </video>
