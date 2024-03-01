@@ -132,11 +132,18 @@ image = "images/slider/r/f7.jpg"
 ######################## Social Icon
 [[params.footer.socialLink]]
 icon = "facebook"
-link = "//facebook.com/hosterialasmontanasinn"
+link = "//facebook.com/escapetolasmontanas"
 
 [[params.footer.socialLink]]
 icon = "twitter"
-link = "//twitter.com/HosteriaLas"
+link = "//twitter.com/escapetolasmontanas"
+
+[[params.footer.socialLink]]
+icon = "tiktok"
+link = "//tiktok.com/escapetolasmontanas"
+[[params.footer.socialLink]]
+icon = "youtube"
+link = "//youtube.com/@LasMontanasInn"
 #
 #[[params.footer.socialLink]]
 #icon = "airbnb"
@@ -144,4 +151,4 @@ link = "//twitter.com/HosteriaLas"
 
 [[params.footer.socialLink]]
 icon = "instagram"
-link = "//instagram.com/hosterialasmontanas"
+link = "//instagram.com/escapetolasmontanas"
