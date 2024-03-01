@@ -5,8 +5,11 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <div class="title">
+                    <div class="title" style = "padding-bottom: 5px">
                         <h3 style="text-align:center;">{{ .title | markdownify }}</h3>
+                    </div>
+                    <div class="subtitle" style = "padding-top:2px; padding-bottom:10px;">
+                        <h3 style="text-align:center;">{{ .subtitle | markdownify }}</h3>
                     </div>
                     <div class="gallery-slider">
                         {{ $imagePath := .imagePath }}

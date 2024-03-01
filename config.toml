@@ -7,7 +7,7 @@ summaryLength = "7"
 paginate = 8
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$","\\.knit\\.md$", "\\.utf8\\.md$", "_cache$"]
 googleAnalytics = "UA-81176691-4"
-staticDir = ["static"]
+staticDir = ["assets"]
 #defaultContentLanguage = "en"
 ############################# Plugins ##############################
 [params.plugins]
@@ -56,7 +56,7 @@ staticDir = ["static"]
   weight = 2
 
   [[menu.main]]
-  name = "To Do"
+  name = "Experiences"
   URL = "blog"
   weight = 3
 
@@ -88,10 +88,12 @@ preloader = "" # use .png , .svg or .gif format
 [params.footer]
 enable = true
 contactInfoTitle = "GET IN <span>TOUCH</span> "
+image = "images/QR Whatsapp LM.png"
 blogTitle = "LAS <span>MONTAÑAS</span>"
 galleryTitle = "OUR <span>VIEWS</span>"
 socialTitle = "Follow <span>US</span>"
 path = "images/slider"
+apiURL = "https://wa.me/message/VIDY2WHBHXUXJ1?src=qr"
 
 ############################ footer contact item
 [[params.footer.contactItem]]
@@ -102,7 +104,7 @@ content =  "+57 (317) 211 4410"
 [[params.footer.contactItem]]
 title="Address"
 icon = "fa fa-map-marker"
-content = "Las Montañas, Vereda Atanasio, Santa Barbara, Colombia"
+content = "[Vereda Atanasio, Santa Barbara, Colombia](https://www.google.com/maps/place/Hoster%C3%ADa+Las+Monta%C3%B1as/@5.8674093,-75.5625925,15z/data=!4m6!3m5!1s0x8e46f32c43089c17:0x95844c8761d44042!8m2!3d5.8584234!4d-75.5566042!16s%2Fg%2F11g1ly8gjq?entry=ttu)"
 
 [[params.footer.contactItem]]
 title="E mail"
@@ -132,11 +134,18 @@ image = "images/slider/r/f7.jpg"
 ######################## Social Icon
 [[params.footer.socialLink]]
 icon = "facebook"
-link = "//facebook.com/hosterialasmontanasinn"
+link = "//facebook.com/escapetolasmontanas"
 
 [[params.footer.socialLink]]
 icon = "twitter"
-link = "//twitter.com/HosteriaLas"
+link = "//twitter.com/escapetolasmontanas"
+
+[[params.footer.socialLink]]
+icon = "tiktok"
+link = "//tiktok.com/escapetolasmontanas"
+[[params.footer.socialLink]]
+icon = "youtube"
+link = "//youtube.com/@LasMontanasInn"
 #
 #[[params.footer.socialLink]]
 #icon = "airbnb"
@@ -144,4 +153,4 @@ link = "//twitter.com/HosteriaLas"
 
 [[params.footer.socialLink]]
 icon = "instagram"
-link = "//instagram.com/hosterialasmontanas"
+link = "//instagram.com/escapetolasmontanas"

@@ -1,7 +1,7 @@
 ---
 title: "Travel Arrangements"
 date: 2020-01-01T00:25:54-05:00
-image: images/blog/airport-route-logo.png
+image: images/airport-route-2024.jpg
 summary: Arriving at your destination  
 draft: false
 ---

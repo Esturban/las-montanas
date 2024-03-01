@@ -6,10 +6,30 @@
                 <div class="block wow fadeInLeft" data-wow-delay="200ms">
                     <h3>{{ with .Site.Params.footer.contactInfoTitle }} {{ . | safeHTML }} {{ end }}</h3>
                     <div class="info">
+                        <div class="col-md-8 text-center" style="flex: 1;">
+                            {{ $postImage := resources.GetMatch .Site.Params.footer.image }}
+                            {{ if $postImage }}
+                              {{ $webpPostImage160 := ($postImage.Fill "160x160 webp q90") }}
+                              {{ $webpPostImage240 := ($postImage.Fill "240x240 webp q90") }}
+                              {{ $webpPostImage300 := ($postImage.Fill "300x300 webp q90") }}
+                              <a href="{{ .Site.Params.footer.apiURL }}" style="display: inline-block;">
+                                <img class="img-responsive post-thumb" loading="lazy" srcset="
+                                {{ $webpPostImage160.RelPermalink }} 160w,
+                                {{ $webpPostImage240.RelPermalink }} 240w,
+                                {{ $webpPostImage300.RelPermalink }} 300w"
+                                sizes="(max-width: 320px) 140px,
+                                       (max-width: 480px) 220px,
+                                       300px"
+                                src="{{ $webpPostImage160.RelPermalink }}" alt="post-image" style="width: auto; max-width: 100%; height: auto;">
+                              </a>
+                           {{ else }}
+                             <a href="{{ .Site.Params.footer.apiURL }}" style="display: inline-block;"><img src="{{ .image | absURL }}" alt="post-image" class="img-responsive"></a>
+                           {{ end }}
+                         </div>
                         <ul>
                             {{ range $.Site.Params.footer.contactItem }}
                             <li>
-                                <h4><i class="{{.icon}}"></i>{{ .title }}</h4>
+                                <h4><i class="{{.icon}}" style = "margin-right:8px;"></i>{{ .title }}</h4>
                                 <p>{{ .content | markdownify }}</p>
                             </li>
                             {{end}}
