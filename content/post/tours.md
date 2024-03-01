@@ -13,7 +13,7 @@ Escape the ordinary and head to Santa Barbara, Colombia, where captivating tours
 
 ## Journey through time  
 
-Explore Damasco, a charming village renowned for its ancient stone churches, known locally as palocoposo. Marvel at these architectural wonders and imagine the lives of the paisa people who built them centuries ago.    
+Explore Damasco, "El Pesebre Escondido de Antioquia" (The Hidden Manger of Antioquia), a picturesque little town, known for its architecture of the Antioquian colonization, its cobblestone streets and its landscapes. The township was the place where the municipality of Santa Barbara was founded in 1773.  
   
 {{<break>}}  
 
