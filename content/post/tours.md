@@ -1,7 +1,7 @@
 ---
 title: "#tours"
 date: 2024-01-12T00:23:59-05:00
-image: images/blog/Palo Coposo.JPG
+image: images/cover/Palocoposo1.JPG
 summary:  ":castle: Historic landmarks"    
 draft: false
 ---  
@@ -17,14 +17,22 @@ Explore Damasco, "El Pesebre Escondido de Antioquia" (The Hidden Manger of Antio
   
 {{<break>}}  
 
-{{< figure src = "/images/blog/Santa-Barbara2.jpg" height = "500px" >}}      
+{{< figure src = "/images/blog/Santa-Barbara2.jpg" height = "500px" >}}  
+  
+    
   
 {{<break>}}  
 
 
 ## Unveil breathtaking beauty   
-Embark on a tour that whisks you to the Cordoncillos peaks, offering jaw-dropping panoramic views of emerald valleys below. Hike through lush forests, breathe in crisp mountain air, and feel invigorated by the spectacular scenery.
-    
+Embark on a tour that whisks you to the Cordoncillos peaks, offering jaw-dropping panoramic views of emerald valleys below. Hike through lush forests, breathe in crisp mountain air, and feel invigorated by the spectacular scenery.   
+  
+{{<break>}}  
+
+{{< figure src = "/images/cover/Palocoposo2.jpg" height = "500px" >}}     
+  
+{{<break>}}  
+ Visit the in-ground church of Palocoposo made of stone. Walk through its nooks and crannies and be amazed by the sacred art.   
   
 {{<break>}}  
 

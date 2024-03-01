@@ -1,7 +1,7 @@
 ---
 title: "#hiking"
 date: 2024-01-12T00:23:59-05:00
-image: images/blog/Hiking.jpg
+image: images/cover/Hiking.jpg
 summary:  Blaze a trail through Antioquia   
 draft: false
 ---  

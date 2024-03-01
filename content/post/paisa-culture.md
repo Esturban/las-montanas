@@ -20,7 +20,8 @@ Beyond the stunning landscapes of the Colombian Andes lies the vibrant culture o
   
 {{<break>}}  
 
-{{< figure src = "https://opportunity.org/content/News/Blog/august-2018/dreamstime_xxl_82894833%20(1).jpg" height = "500px" >}}     
+{{< figure src = "https://opportunity.org/content/News/Blog/august-2018/dreamstime_xxl_82894833%20(1).jpg" height = "500px" >}}
+  {{< figure src = "/images/cover/Plato1.jpg" height = "500px" >}}       {{< figure src = "/images/cover/Plato2.jpg" height = "500px" >}}     
   
 {{<break>}}  
 
@@ -33,9 +34,7 @@ Beyond the stunning landscapes of the Colombian Andes lies the vibrant culture o
 - ## **Warm Hospitality:**  
     - Paisas are renowned for their friendly and welcoming nature. Strike up a conversation with locals, learn a few basic Spanish phrases, and experience their genuine warmth firsthand.       
   
-{{<break>}}  
-
-{{< figure src = "" height = "500px" >}}   
+{{<break>}}   
 - ## **Festive Spirit:** 
     - Immerse yourself in the region's vibrant festivals, filled with music, dance, and colorful parades. Witness the renowned "Fiesta de las Flores" (Flower Festival) in Medellin, a dazzling spectacle of floral sculptures and vibrant energy.  
 {{< break >}}  
