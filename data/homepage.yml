@@ -11,21 +11,23 @@ heroArea:
 gallery:
   enable : true
   imagePath: "images/slider"
-  title: "Relax in the balcony of Antioquia"
+  title: "Welcome to Las Montañas Inn"
+  subtitle: "Your home away from home"
   overlay:
     enable: true
 
 ################ About #######################
 about:
   enable : true
-  image : "images/colombia-2722716_760.jpg" 
-  title : "Discover all <span> Medellin</span> offers"
-  description : "From Santa Barbara, this hilltop inn on the way to el Eje Cafetero is run by a group of passionate locals who have experience working as professional guides for more than 15 years.  \n *Our mission is to show you the best parts of Antioquia by bringing you off the beaten path adventures, disconnecting you from your daily routine to focus more on enjoying the now, and into the heart of the destination.*    \nNo matter which room you choose, we guarantee your stay will be your favorite Colombian lodging experience."
+  image : "images/slider/IMG_1072.JPG" 
+  title : "Where paradise awaits you!"
+  description : "Nestled in Santa Bárbara, Antioquia, Las Montañas Inn is your gateway to the heart of the Colombian Andes countryside, just 2 hours from Medellín. It's not just a cozy retreat; it's an adventure into the vibrant #paisaculture. Here, you'll live the town's daily life, meet friendly locals, and dive into authentic experiences.\n\nPicture yourself waking up to birds singing, breathing in air that smells like a mix of flowers and morning dew, with views that'll make you want to paint them, even if you're not an artist. Experience the thrill of paragliding at Las Montañas Inn, soaring above valleys with breathtaking views of beautiful sunsets. Explore through our tours, discovering the region's most stunning locations. Our hiking trails offer a unique touch, where you might even see clouds drift through the halls, blending the beauty of nature with everyday life.\n\nAnd for anyone into coffee or sweets, you're in for a treat. You can learn how coffee and panela (a sweet treat from sugarcane) are made and blended with some of your favorite flavors. Get ready for a real adventure with paragliding, tours, hiking, and a deep dive into the coffee and panela making process!
+"
   
 ################# Blog ######################
 blog:
   enable : true
-  title : "Things to <span>Do</span>"
+  title : "Experiences to REMEMBER"
   bgImage : "images/blog/IMG_1863.JPG"
   overlay:
     enable : false
@@ -34,27 +36,37 @@ blog:
 ################# food Menu ################
 pricing:
   enable : true
-  title : "<span>EXPLORE</span> Colombia with ease"
+  title : "Your PARADISE includes"
 #  description: "Every package includes a private room (full bed) with en-suite bathroom and  Colombian decor throughout.  <p>Santa Barbara's landscape unfolds before you with a feast for your eyes. Kick your feet up and enjoy the marvelous mountain range view overlooking the jungles of Colombia.</p><p>Your day begins with enjoying fresh organic coffee grown on the grounds to accompany an international breakfast. You notice the pool engulfed in natural light, with cascading water features and wildlife, enhancing the ethereal experience.</p>"
-  description: "Every package includes a private room (full bed) with en-suite bathroom and Colombian decor throughout the suite as well as 3 daily meals.  <p>Santa Barbara's landscape unfolds before you with a feast for your eyes. Kick your feet up and enjoy the marvelous mountain range view overlooking the mountain ranges of Colombia.</p> <p>Your day begins with enjoying fresh organic coffee grown on the grounds to accompany a paisa breakfast. You notice the pool engulfed in natural light, with cascading water features and wildlife, enhancing the ethereal experience.</p>"
-  subtitle : "NIGHTLY AND WEEKLY <span>RATES</span>"
-  subheader: "**All stays include 3 daily meals**: paisa breakfast, country-style lunch and an international dinner"
+  description: 
+  - text: ":bed: Placid suite "
+  - text: ":coffee: served hot + home grown "
+  - text: ":television: cable + Netflix"
+  - text: ":wireless: fiber optic"
+  - text: ":laptop: remote work space"
+  - text: ":parking: safe + private"
+  - text: ":banana:   :mango: fresh juices all day"
+  - text: ":left_speech_bubble:  English + Spanish available"
+  - text: ":plate_with_cutlery:  3 daily meals: Paisa breakfast, country-style lunch and international dinner"
+
+  subtitle : "The right package for your <span>STAY</span>"
+  subheader: "Extended stays receive up to a 25% discount!"
   pricingItem:
   - title: "One night for one"
     description: "An easy stop along the way of your adventure? Spend some time in Santa Barbara with our guidance in the town and neighboring villages."
-    price : "$ 55.00 USD"
+    price : "$ 40.00 USD"
 
   - title: "One night for two"
     description: "If you're travelling with your partner, capture awe-inspiring moments 1600m above sea level."
-    price : "$ 100.00 USD"
+    price : "$ 52.00 USD"
 
   - title: "One week stay"
     description: "Price indicates one week stay for two occupants in a single room"
-    price : "$ 430.00 USD"
+    price : "$ 280.00+ USD"
 
   - title: "One month stay"
     description: "Price indicates one month stay for two occupants in a single room"
-    price : "$ 1,300.00 USD"
+    price : "$ 800.00+ USD"
 
 ################### Subscription ################
 subscription:
@@ -71,5 +83,6 @@ subscription:
 ################ Contact #######################
 contact:
   enable : true   
-  title: "Reserve <span>Today </span>"
-  subtitle: "How do you get to the finca?  Check out our [blog post about travel arrangments](/post/travel-arrangements \"Reserve Now\")"
+  title: "Book your <span>PARADISE</span>"
+  image : "images/QR Whatsapp LM.png"
+  subtitle: "How do you get to the home?  Check out our [blog post about travel arrangments](/post/travel-arrangements \"Reserve Now\")"

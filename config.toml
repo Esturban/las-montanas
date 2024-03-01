@@ -7,7 +7,7 @@ summaryLength = "7"
 paginate = 8
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$","\\.knit\\.md$", "\\.utf8\\.md$", "_cache$"]
 googleAnalytics = "UA-81176691-4"
-staticDir = ["static"]
+staticDir = ["assets"]
 #defaultContentLanguage = "en"
 ############################# Plugins ##############################
 [params.plugins]
@@ -56,7 +56,7 @@ staticDir = ["static"]
   weight = 2
 
   [[menu.main]]
-  name = "To Do"
+  name = "Experiences"
   URL = "blog"
   weight = 3
 
