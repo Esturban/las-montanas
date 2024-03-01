@@ -7,30 +7,7 @@
       <div class="row">
          <div class="col-md-12">
             <div class="block">
-               <h1 class=" heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">{{ .title | markdownify }}</h1>
-               <div style="display: flex; align-items: center; justify-content: center;">
-                  <h3 class="title wow fadeInLeft" style="flex: 1; text-align: center;" data-wow-duration="500ms" data-wow-delay="300ms">{{ .subtitle | markdownify }}</h3>
-                  <div class="col-md-8 text-center" style="flex: 1;">
-                     {{ $postImage := resources.GetMatch .image }}
-                     {{ if $postImage }}
-                       {{ $webpPostImage160 := ($postImage.Fill "160x160 webp q90") }}
-                       {{ $webpPostImage240 := ($postImage.Fill "240x240 webp q90") }}
-                       {{ $webpPostImage300 := ($postImage.Fill "300x300 webp q90") }}
-                       <a href="{{ .Permalink }}" style="display: inline-block;">
-                         <img class="img-responsive post-thumb" loading="lazy" srcset="
-                         {{ $webpPostImage160.RelPermalink }} 160w,
-                         {{ $webpPostImage240.RelPermalink }} 240w,
-                         {{ $webpPostImage300.RelPermalink }} 300w"
-                         sizes="(max-width: 320px) 140px,
-                                (max-width: 480px) 220px,
-                                300px"
-                         src="{{ $webpPostImage160.RelPermalink }}" alt="post-image" style="width: auto; max-width: 100%; height: auto;">
-                       </a>
-                    {{ else }}
-                      <a href="{{ .Permalink }}" style="display: inline-block;"><img src="{{ .image | absURL }}" alt="post-image" class="img-responsive"></a>
-                    {{ end }}
-                  </div>
-                </div>               
+               <h1 class=" heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">{{ .title | markdownify }}</h1>             
                <form name="contact" method="POST" netlify-honeypot="bot-field"  data-netlify="true">
                   <p class="hidden">
     <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
@@ -53,6 +30,8 @@
                   <div><button type="submit" value="send" class="btn btn-default wow bounceIn" data-wow-duration="500ms" data-wow-delay="1300ms" style="width:100%;"
                      role="button" style = "width:100%;">send your message</button></div>
                </form>
+               <h3 class="title wow fadeInLeft" style="flex: 1; text-align: center; padding-top:90px" data-wow-duration="500ms" data-wow-delay="300ms">{{ .subtitle | markdownify }}</h3>
+                  
             </div>
          </div>
          <!-- .col-md-12 close -->
