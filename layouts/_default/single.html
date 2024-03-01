@@ -6,7 +6,24 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center">
-                <img class="img-responsive post-thumb d-inline-block" src="{{ .Params.image | absURL }}" alt="blog-image">
+                {{ $postImage := resources.GetMatch .Params.Image }}
+                {{ if $postImage }}
+                  {{ $webpPostImage320 := ($postImage.Fill "320x178 webp q90") }}
+                  {{ $webpPostImage480 := ($postImage.Fill "480x268 webp q90") }}
+                  {{ $webpPostImage800 := ($postImage.Fill "800x446 webp q90") }}
+                  <a href="{{ .Permalink }}">
+                    <img class="img-responsive post-thumb d-inline-block" loading="lazy" srcset="
+                    {{ $webpPostImage320.RelPermalink }} 320w,
+                    {{ $webpPostImage480.RelPermalink }} 480w,
+                    {{ $webpPostImage800.RelPermalink }} 800w"
+                    sizes="(max-width: 320px) 280px,
+                           (max-width: 480px) 440px,
+                           800px"
+                    src="{{ $webpPostImage800.RelPermalink }}" alt="post-image">
+                  </a>
+                  {{ else }}
+                    <a href="{{ .Permalink }}"><img src="{{ .Params.Image | absURL }}" alt="post-image" class="img-responsive"></a>
+                  {{ end }}
                 <h1 class="post-title">{{ .Title }}</h1>
                 <ul class="list-inline mb-50 post-meta">
                     <li class="list-inline-item">{{ .Params.author }}</li>
